@@ -15,6 +15,7 @@ import pathlib
 import re
 import subprocess
 import sys
+from datetime import datetime, timedelta
 from typing import Any, Dict, Optional
 
 import pandas as pd
@@ -34,21 +35,31 @@ LOCAL_HADOOP_HOME = os.path.join(BASE_DIR, "tools", "hadoop")
 
 load_dotenv()
 
+
+def _secret_or_env(key: str, default: str = "") -> str:
+    try:
+        value = st.secrets.get(key, None)
+        if value not in (None, ""):
+            return str(value)
+    except Exception:
+        pass
+    return os.getenv(key, default)
+
 DEFAULT_DB: Dict[str, str] = {
-    "host":      os.getenv("POSTGRES_HOST",      "localhost"),
-    "port":      os.getenv("POSTGRES_PORT",      "5432"),
-    "dbname":    os.getenv("POSTGRES_DB",        "postgres"),
-    "user":      os.getenv("POSTGRES_USER",      "postgres"),
-    "password":  os.getenv("POSTGRES_PASSWORD",  ""),
-    "raw_table": os.getenv("POSTGRES_RAW_TABLE", "raw_weather"),
-    "agg_table": os.getenv("POSTGRES_AGG_TABLE", "weather_hourly_agg"),
+    "host":      _secret_or_env("POSTGRES_HOST",      "localhost"),
+    "port":      _secret_or_env("POSTGRES_PORT",      "5432"),
+    "dbname":    _secret_or_env("POSTGRES_DB",        "postgres"),
+    "user":      _secret_or_env("POSTGRES_USER",      "postgres"),
+    "password":  _secret_or_env("POSTGRES_PASSWORD",  ""),
+    "raw_table": _secret_or_env("POSTGRES_RAW_TABLE", "raw_weather"),
+    "agg_table": _secret_or_env("POSTGRES_AGG_TABLE", "weather_hourly_agg"),
 }
 DEFAULT_KAFKA: Dict[str, str] = {
-    "bootstrap_servers": os.getenv("KAFKA_BOOTSTRAP_SERVERS", "localhost:9092"),
-    "topic":             os.getenv("KAFKA_TOPIC",             "weather_events"),
+    "bootstrap_servers": _secret_or_env("KAFKA_BOOTSTRAP_SERVERS", "localhost:9092"),
+    "topic":             _secret_or_env("KAFKA_TOPIC",             "weather_events"),
 }
 DEFAULT_API: Dict[str, str] = {
-    "fetch_interval_seconds": os.getenv("FETCH_INTERVAL_SECONDS", "10"),
+    "fetch_interval_seconds": _secret_or_env("FETCH_INTERVAL_SECONDS", "10"),
 }
 
 # WMO Weather Interpretation Codes (https://open-meteo.com/en/docs)
@@ -306,6 +317,64 @@ def load_data(db: Dict[str, str], raw_limit: int) -> Dict[str, Any]:
     }
 
 
+def build_demo_data(raw_limit: int) -> Dict[str, Any]:
+    cities = ["New York", "London", "Tokyo", "Sydney", "Paris", "Dubai"]
+    base = datetime.utcnow().replace(minute=0, second=0, microsecond=0)
+
+    raw_rows = []
+    agg_rows = []
+    for city_idx, city in enumerate(cities):
+        for hour_offset in range(47, -1, -1):
+            ts = base - timedelta(hours=hour_offset)
+            avg_temp = 12 + city_idx * 3 + ((hour_offset % 6) - 3) * 0.8
+            min_temp = avg_temp - 1.5
+            max_temp = avg_temp + 1.7
+            avg_wind = 8 + city_idx * 1.3 + (hour_offset % 5)
+            avg_humidity = 48 + city_idx * 4 + (hour_offset % 9)
+            total_precip = 0.0 if city in {"Dubai", "Paris"} else round((hour_offset % 4) * 0.4, 1)
+            agg_rows.append({
+                "hour_bucket": ts,
+                "city": city,
+                "avg_temperature_c": round(avg_temp, 1),
+                "max_temperature_c": round(max_temp, 1),
+                "min_temperature_c": round(min_temp, 1),
+                "avg_wind_speed_kmh": round(avg_wind, 1),
+                "avg_humidity_pct": round(avg_humidity, 1),
+                "total_precipitation_mm": round(total_precip, 1),
+                "record_count": 1,
+            })
+
+        latest_ts = base - timedelta(minutes=city_idx * 3)
+        raw_rows.append({
+            "fetched_at": latest_ts,
+            "city": city,
+            "temperature_c": round(agg_rows[-1]["avg_temperature_c"], 1),
+            "humidity_pct": int(55 + city_idx * 5),
+            "wind_speed_kmh": round(10 + city_idx * 1.5, 1),
+            "precipitation_mm": round(0.2 * (city_idx % 3), 1),
+            "weather_code": [1, 3, 2, 61, 45, 0][city_idx],
+        })
+
+    raw_df = pd.DataFrame(raw_rows).sort_values("fetched_at", ascending=False).head(raw_limit)
+    latest_df = raw_df.sort_values(["city", "fetched_at"], ascending=[True, False]).drop_duplicates("city")
+    agg_df = pd.DataFrame(agg_rows)
+
+    kpi = {
+        "total_records": len(raw_rows),
+        "cities_active": len(cities),
+        "global_avg_temp_c": round(float(agg_df["avg_temperature_c"].mean()), 1),
+        "last_updated": raw_df["fetched_at"].max(),
+        "records_last_hour": sum(raw_df["fetched_at"] >= (datetime.utcnow() - timedelta(hours=1))),
+    }
+
+    return {
+        "kpi": kpi,
+        "latest": latest_df,
+        "agg": agg_df,
+        "raw": raw_df,
+    }
+
+
 # ---------------------------------------------------------------------------
 # Tab 1 — Overview & Trends
 # ---------------------------------------------------------------------------
@@ -468,6 +537,7 @@ def render_pipeline(
     db: Dict[str, str],
     kafka: Dict[str, str],
     api: Dict[str, str],
+    demo_mode: bool = False,
 ) -> None:
     _cleanup_finished()
 
@@ -480,6 +550,11 @@ def render_pipeline(
         "The **consumer** reads from Kafka and writes to PostgreSQL. "
         "Start it first so no messages are missed."
     )
+    if demo_mode:
+        st.warning(
+            "Demo mode is active because PostgreSQL is not reachable from this deployment. "
+            "The charts below are sample data, and the local producer/consumer controls may not work in Streamlit Cloud."
+        )
 
     s1, s2 = st.columns(2)
     with s1:
@@ -509,14 +584,14 @@ def render_pipeline(
     st.caption("Recommended order: Start Consumer first, then Start Producer.")
 
     bc1, bc2, bc3, bc4 = st.columns(4)
-    if bc1.button("Start Consumer", use_container_width=True, type="primary"):
+    if bc1.button("Start Consumer", use_container_width=True, type="primary", disabled=demo_mode):
         st.success(start_process("weather_consumer.py", "consumer_process", db, kafka, api))
-    if bc2.button("Stop Consumer",  use_container_width=True):
+    if bc2.button("Stop Consumer",  use_container_width=True, disabled=demo_mode):
         _terminate("consumer_process")
         st.info("Consumer stopped.")
-    if bc3.button("Start Producer", use_container_width=True, type="primary"):
+    if bc3.button("Start Producer", use_container_width=True, type="primary", disabled=demo_mode):
         st.success(start_process("weather_producer.py", "producer_process", db, kafka, api))
-    if bc4.button("Stop Producer",  use_container_width=True):
+    if bc4.button("Stop Producer",  use_container_width=True, disabled=demo_mode):
         _terminate("producer_process")
         st.info("Producer stopped.")
 
@@ -656,37 +731,38 @@ def main() -> None:
     )
 
     db, kafka, api, raw_limit = render_sidebar()
+    demo_mode = False
 
     # Verify DB connection and bootstrap tables
     try:
         ensure_tables(db)
     except Exception as exc:
-        st.error(f"PostgreSQL connection failed: {exc}")
-        st.info("Update the Database settings in the sidebar and press R to retry.")
-        # Still show the pipeline tab so the user can start/stop processes
-        _, tab_pipeline, _ = st.tabs(["Overview & Trends", "Pipeline Control", "Data"])
-        with tab_pipeline:
-            render_pipeline(db, kafka, api)
-        return
+        demo_mode = True
+        st.warning(f"PostgreSQL connection failed, so the app is using demo data: {exc}")
+        st.info(
+            "To use live data in Streamlit Cloud, provide a reachable PostgreSQL host in app secrets instead of localhost."
+        )
 
     tab_overview, tab_pipeline, tab_data = st.tabs(
         ["Overview & Trends", "Pipeline Control", "Data"]
     )
 
     # Load all data once per page render
-    try:
-        data = load_data(db, raw_limit)
-    except Exception as exc:
-        st.error(f"Failed to load data from PostgreSQL: {exc}")
-        with tab_pipeline:
-            render_pipeline(db, kafka, api)
-        return
+    if demo_mode:
+        data = build_demo_data(raw_limit)
+    else:
+        try:
+            data = load_data(db, raw_limit)
+        except Exception as exc:
+            demo_mode = True
+            st.warning(f"Failed to load data from PostgreSQL, switching to demo mode: {exc}")
+            data = build_demo_data(raw_limit)
 
     with tab_overview:
         render_overview(data)
 
     with tab_pipeline:
-        render_pipeline(db, kafka, api)
+        render_pipeline(db, kafka, api, demo_mode=demo_mode)
 
     with tab_data:
         render_data(data)
