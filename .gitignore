@@ -1,0 +1,16 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+runtime_logs/
+checkpoints/
+
+.streamlit/
+.pytest_cache/
+.venv/
+venv/
+
+.idea/
+.vscode/

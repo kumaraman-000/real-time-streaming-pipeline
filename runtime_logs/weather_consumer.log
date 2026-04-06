@@ -1,0 +1,719 @@
+2026-04-06 21:04:22,035 [INFO] Tables 'raw_weather' and 'weather_hourly_agg' are ready.
+:: loading settings :: url = jar:file:/C:/Users/HP/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0/LocalCache/local-packages/Python312/site-packages/pyspark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: C:\Users\HP\.ivy2\cache
+The jars for the packages stored in: C:\Users\HP\.ivy2\jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+org.postgresql#postgresql added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-ee76bd1c-f89e-4a59-8e7d-26c3be03b9ad;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 in central
+	found org.apache.kafka#kafka-clients;3.4.1 in central
+	found org.lz4#lz4-java;1.8.0 in central
+	found org.xerial.snappy#snappy-java;1.1.10.3 in central
+	found org.slf4j#slf4j-api;2.0.7 in central
+	found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+	found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+	found commons-logging#commons-logging;1.1.3 in central
+	found com.google.code.findbugs#jsr305;3.0.0 in central
+	found org.apache.commons#commons-pool2;2.11.1 in central
+	found org.postgresql#postgresql;42.7.3 in central
+	found org.checkerframework#checker-qual;3.42.0 in central
+:: resolution report :: resolve 1288ms :: artifacts dl 84ms
+	:: modules in use:
+	com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+	commons-logging#commons-logging;1.1.3 from central in [default]
+	org.apache.commons#commons-pool2;2.11.1 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+	org.apache.kafka#kafka-clients;3.4.1 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 from central in [default]
+	org.checkerframework#checker-qual;3.42.0 from central in [default]
+	org.lz4#lz4-java;1.8.0 from central in [default]
+	org.postgresql#postgresql;42.7.3 from central in [default]
+	org.slf4j#slf4j-api;2.0.7 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.10.3 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   13  |   0   |   0   |   0   ||   13  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-ee76bd1c-f89e-4a59-8e7d-26c3be03b9ad
+	confs: [default]
+	0 artifacts copied, 13 already retrieved (0kB/36ms)
+26/04/06 21:04:31 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-06 21:04:50,073 [INFO] Spark session created.
+2026-04-06 21:04:59,714 [INFO] Callback Server Starting
+2026-04-06 21:04:59,714 [INFO] Socket listening on ('127.0.0.1', 54081)
+26/04/06 21:05:00 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+2026-04-06 21:05:01,690 [INFO] Streaming query started | id=883b3993-f3e7-444c-91b4-8237318cfa2f
+26/04/06 21:05:02 ERROR MicroBatchExecution: Query weather_to_postgres [id = 883b3993-f3e7-444c-91b4-8237318cfa2f, runId = 515ca2a6-a2c9-43d9-b14d-002edc86c086] terminated with error
+java.lang.UnsatisfiedLinkError: org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Ljava/lang/String;I)Z
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Native Method)
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access(NativeIO.java:793)
+	at org.apache.hadoop.fs.FileUtil.canRead(FileUtil.java:1249)
+	at org.apache.hadoop.fs.FileUtil.list(FileUtil.java:1454)
+	at org.apache.hadoop.fs.RawLocalFileSystem.listStatus(RawLocalFileSystem.java:601)
+	at org.apache.hadoop.fs.DelegateToFileSystem.listStatus(DelegateToFileSystem.java:177)
+	at org.apache.hadoop.fs.ChecksumFs.listStatus(ChecksumFs.java:548)
+	at org.apache.hadoop.fs.FileContext$Util$1.next(FileContext.java:1915)
+	at org.apache.hadoop.fs.FileContext$Util$1.next(FileContext.java:1911)
+	at org.apache.hadoop.fs.FSLinkResolver.resolve(FSLinkResolver.java:90)
+	at org.apache.hadoop.fs.FileContext$Util.listStatus(FileContext.java:1917)
+	at org.apache.hadoop.fs.FileContext$Util.listStatus(FileContext.java:1876)
+	at org.apache.hadoop.fs.FileContext$Util.listStatus(FileContext.java:1835)
+	at org.apache.spark.sql.execution.streaming.AbstractFileContextBasedCheckpointFileManager.list(CheckpointFileManager.scala:315)
+	at org.apache.spark.sql.execution.streaming.HDFSMetadataLog.listBatches(HDFSMetadataLog.scala:327)
+	at org.apache.spark.sql.execution.streaming.HDFSMetadataLog.getLatest(HDFSMetadataLog.scala:265)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$2(MicroBatchExecution.scala:253)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:427)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:425)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:249)
+	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:239)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:311)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:289)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.$anonfun$run$1(StreamExecution.scala:211)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:211)
+Exception in thread "stream execution thread for weather_to_postgres [id = 883b3993-f3e7-444c-91b4-8237318cfa2f, runId = 515ca2a6-a2c9-43d9-b14d-002edc86c086]" java.lang.UnsatisfiedLinkError: org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Ljava/lang/String;I)Z
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Native Method)
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access(NativeIO.java:793)
+	at org.apache.hadoop.fs.FileUtil.canRead(FileUtil.java:1249)
+	at org.apache.hadoop.fs.FileUtil.list(FileUtil.java:1454)
+	at org.apache.hadoop.fs.RawLocalFileSystem.listStatus(RawLocalFileSystem.java:601)
+	at org.apache.hadoop.fs.DelegateToFileSystem.listStatus(DelegateToFileSystem.java:177)
+	at org.apache.hadoop.fs.ChecksumFs.listStatus(ChecksumFs.java:548)
+	at org.apache.hadoop.fs.FileContext$Util$1.next(FileContext.java:1915)
+	at org.apache.hadoop.fs.FileContext$Util$1.next(FileContext.java:1911)
+	at org.apache.hadoop.fs.FSLinkResolver.resolve(FSLinkResolver.java:90)
+	at org.apache.hadoop.fs.FileContext$Util.listStatus(FileContext.java:1917)
+	at org.apache.hadoop.fs.FileContext$Util.listStatus(FileContext.java:1876)
+	at org.apache.hadoop.fs.FileContext$Util.listStatus(FileContext.java:1835)
+	at org.apache.spark.sql.execution.streaming.AbstractFileContextBasedCheckpointFileManager.list(CheckpointFileManager.scala:315)
+	at org.apache.spark.sql.execution.streaming.HDFSMetadataLog.listBatches(HDFSMetadataLog.scala:327)
+	at org.apache.spark.sql.execution.streaming.HDFSMetadataLog.getLatest(HDFSMetadataLog.scala:265)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$2(MicroBatchExecution.scala:253)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:427)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:425)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:249)
+	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:239)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:311)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:289)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.$anonfun$run$1(StreamExecution.scala:211)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:211)
+2026-04-06 21:05:02,706 [ERROR] Consumer failed: [STREAM_FAILED] Query [id = 883b3993-f3e7-444c-91b4-8237318cfa2f, runId = 515ca2a6-a2c9-43d9-b14d-002edc86c086] terminated with exception: org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Ljava/lang/String;I)Z
+Traceback (most recent call last):
+  File "D:\GitProject\weather_consumer.py", line 322, in main
+    start_stream(spark)
+  File "D:\GitProject\weather_consumer.py", line 307, in start_stream
+    spark.streams.awaitAnyTermination()
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pyspark\sql\streaming\query.py", line 596, in awaitAnyTermination
+    return self._jsqm.awaitAnyTermination()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\py4j\java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pyspark\errors\exceptions\captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.StreamingQueryException: [STREAM_FAILED] Query [id = 883b3993-f3e7-444c-91b4-8237318cfa2f, runId = 515ca2a6-a2c9-43d9-b14d-002edc86c086] terminated with exception: org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Ljava/lang/String;I)Z
+2026-04-06 21:05:03,342 [INFO] Spark session stopped.
+2026-04-06 21:05:03,363 [INFO] Closing down clientserver connection
+SUCCESS: The process with PID 11736 (child process of PID 25200) has been terminated.
+SUCCESS: The process with PID 25200 (child process of PID 25692) has been terminated.
+SUCCESS: The process with PID 25692 (child process of PID 23864) has been terminated.
+2026-04-06 21:10:17,196 [INFO] Tables 'raw_weather' and 'weather_hourly_agg' are ready.
+:: loading settings :: url = jar:file:/C:/Users/HP/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0/LocalCache/local-packages/Python312/site-packages/pyspark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: C:\Users\HP\.ivy2\cache
+The jars for the packages stored in: C:\Users\HP\.ivy2\jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+org.postgresql#postgresql added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-1c95f58b-5fde-4162-9e2b-b9b1ab35144c;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 in central
+	found org.apache.kafka#kafka-clients;3.4.1 in central
+	found org.lz4#lz4-java;1.8.0 in central
+	found org.xerial.snappy#snappy-java;1.1.10.3 in central
+	found org.slf4j#slf4j-api;2.0.7 in central
+	found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+	found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+	found commons-logging#commons-logging;1.1.3 in central
+	found com.google.code.findbugs#jsr305;3.0.0 in central
+	found org.apache.commons#commons-pool2;2.11.1 in central
+	found org.postgresql#postgresql;42.7.3 in central
+	found org.checkerframework#checker-qual;3.42.0 in central
+:: resolution report :: resolve 1246ms :: artifacts dl 184ms
+	:: modules in use:
+	com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+	commons-logging#commons-logging;1.1.3 from central in [default]
+	org.apache.commons#commons-pool2;2.11.1 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+	org.apache.kafka#kafka-clients;3.4.1 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 from central in [default]
+	org.checkerframework#checker-qual;3.42.0 from central in [default]
+	org.lz4#lz4-java;1.8.0 from central in [default]
+	org.postgresql#postgresql;42.7.3 from central in [default]
+	org.slf4j#slf4j-api;2.0.7 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.10.3 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   13  |   0   |   0   |   0   ||   13  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-1c95f58b-5fde-4162-9e2b-b9b1ab35144c
+	confs: [default]
+	0 artifacts copied, 13 already retrieved (0kB/31ms)
+26/04/06 21:10:26 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-06 21:10:41,327 [INFO] Spark session created.
+2026-04-06 21:12:28,543 [INFO] Tables 'raw_weather' and 'weather_hourly_agg' are ready.
+:: loading settings :: url = jar:file:/C:/Users/HP/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0/LocalCache/local-packages/Python312/site-packages/pyspark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: C:\Users\HP\.ivy2\cache
+The jars for the packages stored in: C:\Users\HP\.ivy2\jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+org.postgresql#postgresql added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-e039a9e1-f788-470b-a816-e2903d8db1f8;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 in central
+	found org.apache.kafka#kafka-clients;3.4.1 in central
+	found org.lz4#lz4-java;1.8.0 in central
+	found org.xerial.snappy#snappy-java;1.1.10.3 in central
+	found org.slf4j#slf4j-api;2.0.7 in central
+	found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+	found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+	found commons-logging#commons-logging;1.1.3 in central
+	found com.google.code.findbugs#jsr305;3.0.0 in central
+	found org.apache.commons#commons-pool2;2.11.1 in central
+	found org.postgresql#postgresql;42.7.3 in central
+	found org.checkerframework#checker-qual;3.42.0 in central
+:: resolution report :: resolve 2136ms :: artifacts dl 96ms
+	:: modules in use:
+	com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+	commons-logging#commons-logging;1.1.3 from central in [default]
+	org.apache.commons#commons-pool2;2.11.1 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+	org.apache.kafka#kafka-clients;3.4.1 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 from central in [default]
+	org.checkerframework#checker-qual;3.42.0 from central in [default]
+	org.lz4#lz4-java;1.8.0 from central in [default]
+	org.postgresql#postgresql;42.7.3 from central in [default]
+	org.slf4j#slf4j-api;2.0.7 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.10.3 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   13  |   0   |   0   |   0   ||   13  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-e039a9e1-f788-470b-a816-e2903d8db1f8
+	confs: [default]
+	0 artifacts copied, 13 already retrieved (0kB/36ms)
+26/04/06 21:12:38 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-06 21:12:55,784 [INFO] Spark session created.
+2026-04-06 21:13:04,866 [INFO] Callback Server Starting
+2026-04-06 21:13:04,867 [INFO] Socket listening on ('127.0.0.1', 60246)
+26/04/06 21:13:05 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+2026-04-06 21:13:05,785 [INFO] Streaming query started | id=883b3993-f3e7-444c-91b4-8237318cfa2f
+26/04/06 21:13:07 ERROR MicroBatchExecution: Query weather_to_postgres [id = 883b3993-f3e7-444c-91b4-8237318cfa2f, runId = 5e9ffc1c-2420-499a-9e90-6ed012dad931] terminated with error
+java.lang.UnsatisfiedLinkError: org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Ljava/lang/String;I)Z
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Native Method)
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access(NativeIO.java:793)
+	at org.apache.hadoop.fs.FileUtil.canRead(FileUtil.java:1249)
+	at org.apache.hadoop.fs.FileUtil.list(FileUtil.java:1454)
+	at org.apache.hadoop.fs.RawLocalFileSystem.listStatus(RawLocalFileSystem.java:601)
+	at org.apache.hadoop.fs.DelegateToFileSystem.listStatus(DelegateToFileSystem.java:177)
+	at org.apache.hadoop.fs.ChecksumFs.listStatus(ChecksumFs.java:548)
+	at org.apache.hadoop.fs.FileContext$Util$1.next(FileContext.java:1915)
+	at org.apache.hadoop.fs.FileContext$Util$1.next(FileContext.java:1911)
+	at org.apache.hadoop.fs.FSLinkResolver.resolve(FSLinkResolver.java:90)
+	at org.apache.hadoop.fs.FileContext$Util.listStatus(FileContext.java:1917)
+	at org.apache.hadoop.fs.FileContext$Util.listStatus(FileContext.java:1876)
+	at org.apache.hadoop.fs.FileContext$Util.listStatus(FileContext.java:1835)
+	at org.apache.spark.sql.execution.streaming.AbstractFileContextBasedCheckpointFileManager.list(CheckpointFileManager.scala:315)
+	at org.apache.spark.sql.execution.streaming.HDFSMetadataLog.listBatches(HDFSMetadataLog.scala:327)
+	at org.apache.spark.sql.execution.streaming.HDFSMetadataLog.getLatest(HDFSMetadataLog.scala:265)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$2(MicroBatchExecution.scala:253)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:427)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:425)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:249)
+	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:239)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:311)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:289)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.$anonfun$run$1(StreamExecution.scala:211)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:211)
+Exception in thread "stream execution thread for weather_to_postgres [id = 883b3993-f3e7-444c-91b4-8237318cfa2f, runId = 5e9ffc1c-2420-499a-9e90-6ed012dad931]" java.lang.UnsatisfiedLinkError: org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Ljava/lang/String;I)Z
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Native Method)
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access(NativeIO.java:793)
+	at org.apache.hadoop.fs.FileUtil.canRead(FileUtil.java:1249)
+	at org.apache.hadoop.fs.FileUtil.list(FileUtil.java:1454)
+	at org.apache.hadoop.fs.RawLocalFileSystem.listStatus(RawLocalFileSystem.java:601)
+	at org.apache.hadoop.fs.DelegateToFileSystem.listStatus(DelegateToFileSystem.java:177)
+	at org.apache.hadoop.fs.ChecksumFs.listStatus(ChecksumFs.java:548)
+	at org.apache.hadoop.fs.FileContext$Util$1.next(FileContext.java:1915)
+	at org.apache.hadoop.fs.FileContext$Util$1.next(FileContext.java:1911)
+	at org.apache.hadoop.fs.FSLinkResolver.resolve(FSLinkResolver.java:90)
+	at org.apache.hadoop.fs.FileContext$Util.listStatus(FileContext.java:1917)
+	at org.apache.hadoop.fs.FileContext$Util.listStatus(FileContext.java:1876)
+	at org.apache.hadoop.fs.FileContext$Util.listStatus(FileContext.java:1835)
+	at org.apache.spark.sql.execution.streaming.AbstractFileContextBasedCheckpointFileManager.list(CheckpointFileManager.scala:315)
+	at org.apache.spark.sql.execution.streaming.HDFSMetadataLog.listBatches(HDFSMetadataLog.scala:327)
+	at org.apache.spark.sql.execution.streaming.HDFSMetadataLog.getLatest(HDFSMetadataLog.scala:265)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$2(MicroBatchExecution.scala:253)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:427)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:425)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:249)
+	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:239)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:311)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:289)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.$anonfun$run$1(StreamExecution.scala:211)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:211)
+2026-04-06 21:13:07,660 [ERROR] Consumer failed: [STREAM_FAILED] Query [id = 883b3993-f3e7-444c-91b4-8237318cfa2f, runId = 5e9ffc1c-2420-499a-9e90-6ed012dad931] terminated with exception: org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Ljava/lang/String;I)Z
+Traceback (most recent call last):
+  File "D:\GitProject\weather_consumer.py", line 322, in main
+    start_stream(spark)
+  File "D:\GitProject\weather_consumer.py", line 307, in start_stream
+    spark.streams.awaitAnyTermination()
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pyspark\sql\streaming\query.py", line 596, in awaitAnyTermination
+    return self._jsqm.awaitAnyTermination()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\py4j\java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pyspark\errors\exceptions\captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.StreamingQueryException: [STREAM_FAILED] Query [id = 883b3993-f3e7-444c-91b4-8237318cfa2f, runId = 5e9ffc1c-2420-499a-9e90-6ed012dad931] terminated with exception: org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Ljava/lang/String;I)Z
+2026-04-06 21:13:08,159 [INFO] Spark session stopped.
+2026-04-06 21:13:08,193 [INFO] Closing down clientserver connection
+26/04/06 21:13:08 ERROR ShutdownHookManager: Exception while deleting Spark temp dir: C:\Users\HP\AppData\Local\Temp\spark-005cc47b-4e4b-4ee2-878d-e6a3a2c6e1a5\pyspark-1d441322-2132-4446-9631-2376da025fcc
+java.nio.file.NoSuchFileException: C:\Users\HP\AppData\Local\Temp\spark-005cc47b-4e4b-4ee2-878d-e6a3a2c6e1a5\pyspark-1d441322-2132-4446-9631-2376da025fcc
+	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(Unknown Source)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(Unknown Source)
+	at java.nio.file.Files.readAttributes(Unknown Source)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:124)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90)
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121)
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120)
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126)
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4(ShutdownHookManager.scala:65)
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4$adapted(ShutdownHookManager.scala:62)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$2(ShutdownHookManager.scala:62)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:214)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+SUCCESS: The process with PID 19948 (child process of PID 25620) has been terminated.
+SUCCESS: The process with PID 25620 (child process of PID 20840) has been terminated.
+SUCCESS: The process with PID 20840 (child process of PID 3584) has been terminated.
+2026-04-06 21:23:40,277 [INFO] Tables 'raw_weather' and 'weather_hourly_agg' are ready.
+2026-04-06 21:23:40,417 [INFO] PostgreSQL OK — 'raw_weather' has 0 existing row(s).
+:: loading settings :: url = jar:file:/C:/Users/HP/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0/LocalCache/local-packages/Python312/site-packages/pyspark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: C:\Users\HP\.ivy2\cache
+The jars for the packages stored in: C:\Users\HP\.ivy2\jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+org.postgresql#postgresql added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-148f7ffa-a816-44c4-9396-e01c4da5b750;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 in central
+	found org.apache.kafka#kafka-clients;3.4.1 in central
+	found org.lz4#lz4-java;1.8.0 in central
+	found org.xerial.snappy#snappy-java;1.1.10.3 in central
+	found org.slf4j#slf4j-api;2.0.7 in central
+	found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+	found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+	found commons-logging#commons-logging;1.1.3 in central
+	found com.google.code.findbugs#jsr305;3.0.0 in central
+	found org.apache.commons#commons-pool2;2.11.1 in central
+	found org.postgresql#postgresql;42.7.3 in central
+	found org.checkerframework#checker-qual;3.42.0 in central
+:: resolution report :: resolve 1789ms :: artifacts dl 93ms
+	:: modules in use:
+	com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+	commons-logging#commons-logging;1.1.3 from central in [default]
+	org.apache.commons#commons-pool2;2.11.1 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+	org.apache.kafka#kafka-clients;3.4.1 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 from central in [default]
+	org.checkerframework#checker-qual;3.42.0 from central in [default]
+	org.lz4#lz4-java;1.8.0 from central in [default]
+	org.postgresql#postgresql;42.7.3 from central in [default]
+	org.slf4j#slf4j-api;2.0.7 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.10.3 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   13  |   0   |   0   |   0   ||   13  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-148f7ffa-a816-44c4-9396-e01c4da5b750
+	confs: [default]
+	0 artifacts copied, 13 already retrieved (0kB/76ms)
+26/04/06 21:23:51 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/04/06 21:23:56 ERROR ShutdownHookManager: Exception while deleting Spark temp dir: C:\Users\HP\AppData\Local\Temp\spark-97603883-7965-4aee-a34e-61fd5bd760df\userFiles-30fc2fcf-9350-434d-af60-e2ee3366584a
+java.nio.file.NoSuchFileException: C:\Users\HP\AppData\Local\Temp\spark-97603883-7965-4aee-a34e-61fd5bd760df\userFiles-30fc2fcf-9350-434d-af60-e2ee3366584a
+	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(Unknown Source)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(Unknown Source)
+	at java.nio.file.Files.readAttributes(Unknown Source)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:124)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90)
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121)
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120)
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126)
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4(ShutdownHookManager.scala:65)
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4$adapted(ShutdownHookManager.scala:62)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$2(ShutdownHookManager.scala:62)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:214)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2026-04-06 21:37:59,916 [INFO] Tables 'raw_weather' and 'weather_hourly_agg' are ready.
+2026-04-06 21:37:59,995 [INFO] PostgreSQL OK — 'raw_weather' has 0 existing row(s).
+:: loading settings :: url = jar:file:/C:/Users/HP/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0/LocalCache/local-packages/Python312/site-packages/pyspark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: C:\Users\HP\.ivy2\cache
+The jars for the packages stored in: C:\Users\HP\.ivy2\jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+org.postgresql#postgresql added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-a64ae769-a9b8-416c-8acd-8c9ef7651e06;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 in central
+	found org.apache.kafka#kafka-clients;3.4.1 in central
+	found org.lz4#lz4-java;1.8.0 in central
+	found org.xerial.snappy#snappy-java;1.1.10.3 in central
+	found org.slf4j#slf4j-api;2.0.7 in central
+	found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+	found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+	found commons-logging#commons-logging;1.1.3 in central
+	found com.google.code.findbugs#jsr305;3.0.0 in central
+	found org.apache.commons#commons-pool2;2.11.1 in central
+	found org.postgresql#postgresql;42.7.3 in central
+	found org.checkerframework#checker-qual;3.42.0 in central
+:: resolution report :: resolve 1333ms :: artifacts dl 329ms
+	:: modules in use:
+	com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+	commons-logging#commons-logging;1.1.3 from central in [default]
+	org.apache.commons#commons-pool2;2.11.1 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+	org.apache.kafka#kafka-clients;3.4.1 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 from central in [default]
+	org.checkerframework#checker-qual;3.42.0 from central in [default]
+	org.lz4#lz4-java;1.8.0 from central in [default]
+	org.postgresql#postgresql;42.7.3 from central in [default]
+	org.slf4j#slf4j-api;2.0.7 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.10.3 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   13  |   0   |   0   |   0   ||   13  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-a64ae769-a9b8-416c-8acd-8c9ef7651e06
+	confs: [default]
+	0 artifacts copied, 13 already retrieved (0kB/30ms)
+26/04/06 21:38:10 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-06 21:38:28,843 [INFO] Spark session created.
+2026-04-06 21:38:37,091 [INFO] Callback Server Starting
+2026-04-06 21:38:37,091 [INFO] Socket listening on ('127.0.0.1', 55415)
+26/04/06 21:38:37 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+2026-04-06 21:38:37,733 [INFO] Streaming query started | id=883b3993-f3e7-444c-91b4-8237318cfa2f
+26/04/06 21:38:38 ERROR MicroBatchExecution: Query weather_to_postgres [id = 883b3993-f3e7-444c-91b4-8237318cfa2f, runId = fbf47cbb-7b0b-46df-9109-fa66695809c6] terminated with error
+java.lang.UnsatisfiedLinkError: org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Ljava/lang/String;I)Z
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Native Method)
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access(NativeIO.java:793)
+	at org.apache.hadoop.fs.FileUtil.canRead(FileUtil.java:1249)
+	at org.apache.hadoop.fs.FileUtil.list(FileUtil.java:1454)
+	at org.apache.hadoop.fs.RawLocalFileSystem.listStatus(RawLocalFileSystem.java:601)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.hadoop.fs.ChecksumFileSystem.listStatus(ChecksumFileSystem.java:761)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.spark.sql.execution.streaming.FileSystemBasedCheckpointFileManager.list(CheckpointFileManager.scala:238)
+	at org.apache.spark.sql.execution.streaming.HDFSMetadataLog.listBatches(HDFSMetadataLog.scala:327)
+	at org.apache.spark.sql.execution.streaming.HDFSMetadataLog.getLatest(HDFSMetadataLog.scala:265)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$2(MicroBatchExecution.scala:253)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:427)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:425)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:249)
+	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:239)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:311)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:289)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.$anonfun$run$1(StreamExecution.scala:211)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:211)
+Exception in thread "stream execution thread for weather_to_postgres [id = 883b3993-f3e7-444c-91b4-8237318cfa2f, runId = fbf47cbb-7b0b-46df-9109-fa66695809c6]" java.lang.UnsatisfiedLinkError: org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Ljava/lang/String;I)Z
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Native Method)
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access(NativeIO.java:793)
+	at org.apache.hadoop.fs.FileUtil.canRead(FileUtil.java:1249)
+	at org.apache.hadoop.fs.FileUtil.list(FileUtil.java:1454)
+	at org.apache.hadoop.fs.RawLocalFileSystem.listStatus(RawLocalFileSystem.java:601)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.hadoop.fs.ChecksumFileSystem.listStatus(ChecksumFileSystem.java:761)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.spark.sql.execution.streaming.FileSystemBasedCheckpointFileManager.list(CheckpointFileManager.scala:238)
+	at org.apache.spark.sql.execution.streaming.HDFSMetadataLog.listBatches(HDFSMetadataLog.scala:327)
+	at org.apache.spark.sql.execution.streaming.HDFSMetadataLog.getLatest(HDFSMetadataLog.scala:265)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$2(MicroBatchExecution.scala:253)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:427)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:425)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:249)
+	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:239)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:311)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:289)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.$anonfun$run$1(StreamExecution.scala:211)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:211)
+2026-04-06 21:38:38,830 [ERROR] Consumer failed: [STREAM_FAILED] Query [id = 883b3993-f3e7-444c-91b4-8237318cfa2f, runId = fbf47cbb-7b0b-46df-9109-fa66695809c6] terminated with exception: org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Ljava/lang/String;I)Z
+Traceback (most recent call last):
+  File "D:\GitProject\weather_consumer.py", line 382, in main
+    start_stream(spark)
+  File "D:\GitProject\weather_consumer.py", line 366, in start_stream
+    spark.streams.awaitAnyTermination()
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pyspark\sql\streaming\query.py", line 596, in awaitAnyTermination
+    return self._jsqm.awaitAnyTermination()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\py4j\java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pyspark\errors\exceptions\captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.StreamingQueryException: [STREAM_FAILED] Query [id = 883b3993-f3e7-444c-91b4-8237318cfa2f, runId = fbf47cbb-7b0b-46df-9109-fa66695809c6] terminated with exception: org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Ljava/lang/String;I)Z
+2026-04-06 21:38:39,216 [INFO] Spark session stopped.
+2026-04-06 21:38:39,242 [INFO] Closing down clientserver connection
+SUCCESS: The process with PID 3668 (child process of PID 26000) has been terminated.
+SUCCESS: The process with PID 26000 (child process of PID 20056) has been terminated.
+SUCCESS: The process with PID 20056 (child process of PID 22784) has been terminated.
+2026-04-06 21:42:05,782 [INFO] Tables 'raw_weather' and 'weather_hourly_agg' are ready.
+2026-04-06 21:42:05,877 [INFO] PostgreSQL OK - 'raw_weather' has 0 existing row(s).
+2026-04-06 21:42:05,887 [INFO] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2026-04-06 21:42:05,887 [INFO] Probing node bootstrap-0 broker version
+2026-04-06 21:42:05,887 [INFO] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2026-04-06 21:42:05,994 [INFO] Broker version identified as 2.6.0
+2026-04-06 21:42:05,994 [INFO] Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+2026-04-06 21:42:05,998 [INFO] Updating subscribed topics to: ('weather_events',)
+2026-04-06 21:42:05,998 [INFO] Kafka consumer connected | bootstrap=localhost:9092 topic=weather_events group_id=weather-consumer-group
+2026-04-06 21:42:06,423 [INFO] <BrokerConnection node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2026-04-06 21:42:06,425 [INFO] <BrokerConnection node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2026-04-06 21:42:06,426 [INFO] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2026-04-06 21:42:09,096 [INFO] Group coordinator for weather-consumer-group is BrokerMetadata(nodeId='coordinator-1', host='localhost', port=9092, rack=None)
+2026-04-06 21:42:09,096 [INFO] Discovered coordinator coordinator-1 for group weather-consumer-group
+2026-04-06 21:42:09,096 [INFO] Starting new heartbeat thread
+2026-04-06 21:42:09,097 [INFO] Revoking previously assigned partitions set() for group weather-consumer-group
+2026-04-06 21:42:09,099 [INFO] <BrokerConnection node_id=coordinator-1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2026-04-06 21:42:09,100 [INFO] <BrokerConnection node_id=coordinator-1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2026-04-06 21:42:09,201 [INFO] (Re-)joining group weather-consumer-group
+2026-04-06 21:42:12,300 [INFO] Elected group leader -- performing partition assignments using range
+2026-04-06 21:42:12,364 [INFO] Successfully joined group weather-consumer-group with generation 1
+2026-04-06 21:42:12,364 [INFO] Updated partition assignment: [TopicPartition(topic='weather_events', partition=0)]
+2026-04-06 21:42:12,364 [INFO] Setting newly assigned partitions {TopicPartition(topic='weather_events', partition=0)} for group weather-consumer-group
+2026-04-06 21:42:13,034 [INFO] No messages received in the last 5000 ms.
+2026-04-06 21:42:19,037 [INFO] No messages received in the last 5000 ms.
+2026-04-06 21:42:22,969 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:42:23,394 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:42:23,659 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:42:23,689 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:42:23,828 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:42:23,948 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:42:24,369 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:42:24,472 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:42:24,665 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:42:25,002 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:42:25,107 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:42:25,214 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:42:25,628 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:42:25,816 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:42:26,004 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:42:26,409 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:42:26,597 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:42:26,774 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:42:31,774 [INFO] No messages received in the last 5000 ms.
+2026-04-06 21:42:37,056 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:42:37,172 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:42:37,294 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:42:37,688 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:42:37,878 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:42:38,176 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:42:38,444 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:42:38,582 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:42:38,761 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:42:39,098 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:42:39,192 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:42:39,304 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:42:39,774 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:42:39,889 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:42:40,066 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:42:40,464 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:42:40,546 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:42:40,657 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:42:45,661 [INFO] No messages received in the last 5000 ms.
+2026-04-06 21:42:51,107 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:42:51,243 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:42:51,425 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:42:51,755 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:42:51,864 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:42:51,971 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:42:52,443 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:42:52,540 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:42:52,732 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:42:53,067 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:42:53,198 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:42:53,361 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:42:53,717 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:42:53,861 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:42:53,988 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:42:54,382 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:42:54,559 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:42:54,699 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:42:59,702 [INFO] No messages received in the last 5000 ms.
+2026-04-06 21:43:05,067 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:43:05,183 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:43:05,265 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:43:05,817 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:43:05,897 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:43:06,005 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:43:06,517 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:43:06,580 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:43:06,688 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:43:07,215 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:43:07,291 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:43:07,400 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:43:07,871 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:43:07,973 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:43:08,086 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:43:08,595 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:43:08,678 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:43:08,768 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:43:13,781 [INFO] No messages received in the last 5000 ms.
+2026-04-06 21:43:19,227 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:43:19,324 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:43:19,523 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:43:19,955 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:43:20,056 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:43:20,164 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:43:20,588 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:43:20,674 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:43:20,762 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:43:21,203 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:43:21,335 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:43:21,506 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:43:21,856 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:43:21,977 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:43:22,106 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:43:22,550 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:43:22,653 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:43:22,851 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:43:27,865 [INFO] No messages received in the last 5000 ms.
+2026-04-06 21:43:33,260 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:43:33,446 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:43:33,643 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:43:33,888 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:43:34,060 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:43:34,329 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:43:34,526 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:43:34,799 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:43:35,072 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:43:35,174 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:43:35,379 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:43:35,533 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:43:35,888 [INFO] Batch received=1 valid=1 dropped_by_quality=0
+2026-04-06 21:43:36,024 [INFO] 1 row(s) written to 'raw_weather'.
+2026-04-06 21:43:36,152 [INFO] Upserted hourly agg for 1 hour bucket(s).
+2026-04-06 21:43:41,169 [INFO] No messages received in the last 5000 ms.

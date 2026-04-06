@@ -1,0 +1,720 @@
+Traceback (most recent call last):
+  File "D:\GitProject\producer.py", line 18, in <module>
+    from kafka import KafkaProducer
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\__init__.py", line 23, in <module>
+    from kafka.consumer import KafkaConsumer
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\consumer\__init__.py", line 3, in <module>
+    from kafka.consumer.group import KafkaConsumer
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\consumer\group.py", line 13, in <module>
+    from kafka.consumer.fetcher import Fetcher
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\consumer\fetcher.py", line 19, in <module>
+    from kafka.record import MemoryRecords
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\record\__init__.py", line 1, in <module>
+    from kafka.record.memory_records import MemoryRecords, MemoryRecordsBuilder
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\record\memory_records.py", line 27, in <module>
+    from kafka.record.legacy_records import LegacyRecordBatch, LegacyRecordBatchBuilder
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\record\legacy_records.py", line 50, in <module>
+    from kafka.codec import (
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\codec.py", line 9, in <module>
+    from kafka.vendor.six.moves import range
+ModuleNotFoundError: No module named 'kafka.vendor.six.moves'
+Traceback (most recent call last):
+  File "D:\GitProject\producer.py", line 18, in <module>
+    from kafka import KafkaProducer
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\__init__.py", line 23, in <module>
+    from kafka.consumer import KafkaConsumer
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\consumer\__init__.py", line 3, in <module>
+    from kafka.consumer.group import KafkaConsumer
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\consumer\group.py", line 13, in <module>
+    from kafka.consumer.fetcher import Fetcher
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\consumer\fetcher.py", line 19, in <module>
+    from kafka.record import MemoryRecords
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\record\__init__.py", line 1, in <module>
+    from kafka.record.memory_records import MemoryRecords, MemoryRecordsBuilder
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\record\memory_records.py", line 27, in <module>
+    from kafka.record.legacy_records import LegacyRecordBatch, LegacyRecordBatchBuilder
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\record\legacy_records.py", line 50, in <module>
+    from kafka.codec import (
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\codec.py", line 9, in <module>
+    from kafka.vendor.six.moves import range
+ModuleNotFoundError: No module named 'kafka.vendor.six.moves'
+Traceback (most recent call last):
+  File "D:\GitProject\producer.py", line 18, in <module>
+    from kafka import KafkaProducer
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\__init__.py", line 23, in <module>
+    from kafka.consumer import KafkaConsumer
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\consumer\__init__.py", line 3, in <module>
+    from kafka.consumer.group import KafkaConsumer
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\consumer\group.py", line 13, in <module>
+    from kafka.consumer.fetcher import Fetcher
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\consumer\fetcher.py", line 19, in <module>
+    from kafka.record import MemoryRecords
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\record\__init__.py", line 1, in <module>
+    from kafka.record.memory_records import MemoryRecords, MemoryRecordsBuilder
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\record\memory_records.py", line 27, in <module>
+    from kafka.record.legacy_records import LegacyRecordBatch, LegacyRecordBatchBuilder
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\record\legacy_records.py", line 50, in <module>
+    from kafka.codec import (
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\codec.py", line 9, in <module>
+    from kafka.vendor.six.moves import range
+ModuleNotFoundError: No module named 'kafka.vendor.six.moves'
+Traceback (most recent call last):
+  File "D:\GitProject\producer.py", line 18, in <module>
+    from kafka import KafkaProducer
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\__init__.py", line 23, in <module>
+    from kafka.consumer import KafkaConsumer
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\consumer\__init__.py", line 3, in <module>
+    from kafka.consumer.group import KafkaConsumer
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\consumer\group.py", line 13, in <module>
+    from kafka.consumer.fetcher import Fetcher
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\consumer\fetcher.py", line 19, in <module>
+    from kafka.record import MemoryRecords
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\record\__init__.py", line 1, in <module>
+    from kafka.record.memory_records import MemoryRecords, MemoryRecordsBuilder
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\record\memory_records.py", line 27, in <module>
+    from kafka.record.legacy_records import LegacyRecordBatch, LegacyRecordBatchBuilder
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\record\legacy_records.py", line 50, in <module>
+    from kafka.codec import (
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\codec.py", line 9, in <module>
+    from kafka.vendor.six.moves import range
+ModuleNotFoundError: No module named 'kafka.vendor.six.moves'
+Traceback (most recent call last):
+  File "D:\GitProject\producer.py", line 18, in <module>
+    from kafka import KafkaProducer
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\__init__.py", line 23, in <module>
+    from kafka.consumer import KafkaConsumer
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\consumer\__init__.py", line 3, in <module>
+    from kafka.consumer.group import KafkaConsumer
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\consumer\group.py", line 13, in <module>
+    from kafka.consumer.fetcher import Fetcher
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\consumer\fetcher.py", line 19, in <module>
+    from kafka.record import MemoryRecords
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\record\__init__.py", line 1, in <module>
+    from kafka.record.memory_records import MemoryRecords, MemoryRecordsBuilder
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\record\memory_records.py", line 27, in <module>
+    from kafka.record.legacy_records import LegacyRecordBatch, LegacyRecordBatchBuilder
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\record\legacy_records.py", line 50, in <module>
+    from kafka.codec import (
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\codec.py", line 9, in <module>
+    from kafka.vendor.six.moves import range
+ModuleNotFoundError: No module named 'kafka.vendor.six.moves'
+Traceback (most recent call last):
+  File "D:\GitProject\producer.py", line 18, in <module>
+    from kafka import KafkaProducer
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\__init__.py", line 23, in <module>
+    from kafka.consumer import KafkaConsumer
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\consumer\__init__.py", line 3, in <module>
+    from kafka.consumer.group import KafkaConsumer
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\consumer\group.py", line 13, in <module>
+    from kafka.consumer.fetcher import Fetcher
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\consumer\fetcher.py", line 19, in <module>
+    from kafka.record import MemoryRecords
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\record\__init__.py", line 1, in <module>
+    from kafka.record.memory_records import MemoryRecords, MemoryRecordsBuilder
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\record\memory_records.py", line 27, in <module>
+    from kafka.record.legacy_records import LegacyRecordBatch, LegacyRecordBatchBuilder
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\record\legacy_records.py", line 50, in <module>
+    from kafka.codec import (
+  File "C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\kafka\codec.py", line 9, in <module>
+    from kafka.vendor.six.moves import range
+ModuleNotFoundError: No module named 'kafka.vendor.six.moves'
+2026-04-06 19:39:52,597 [INFO] <BrokerConnection node_id=bootstrap-0 host=host.docker.internal:9092 <connecting> [IPv4 ('192.168.1.76', 9092)]>: connecting to host.docker.internal:9092 [('192.168.1.76', 9092) IPv4]
+2026-04-06 19:39:52,597 [INFO] Probing node bootstrap-0 broker version
+2026-04-06 19:39:52,599 [INFO] <BrokerConnection node_id=bootstrap-0 host=host.docker.internal:9092 <connecting> [IPv4 ('192.168.1.76', 9092)]>: Connection complete.
+2026-04-06 19:39:52,715 [INFO] Broker version identified as 2.6.0
+2026-04-06 19:39:52,715 [INFO] Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+2026-04-06 19:39:52,727 [INFO] Kafka producer connected to host.docker.internal:9092 and publishing to topic 'logs'.
+2026-04-06 19:39:52,783 [INFO] <BrokerConnection node_id=1 host=host.docker.internal:9092 <connecting> [IPv4 ('192.168.1.76', 9092)]>: connecting to host.docker.internal:9092 [('192.168.1.76', 9092) IPv4]
+2026-04-06 19:39:52,786 [INFO] <BrokerConnection node_id=1 host=host.docker.internal:9092 <connecting> [IPv4 ('192.168.1.76', 9092)]>: Connection complete.
+2026-04-06 19:39:52,786 [INFO] <BrokerConnection node_id=bootstrap-0 host=host.docker.internal:9092 <connected> [IPv4 ('192.168.1.76', 9092)]>: Closing connection. 
+2026-04-06 19:39:52,794 [INFO] Sent log to topic=logs partition=0 offset=192 payload={'timestamp': '2026-04-06T14:09:52.727076+00:00', 'level': 'INFO', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:39:53,864 [INFO] Sent log to topic=logs partition=0 offset=193 payload={'timestamp': '2026-04-06T14:09:53.795684+00:00', 'level': 'WARN', 'message': 'Configuration file reloaded'}
+2026-04-06 19:39:54,935 [INFO] Sent log to topic=logs partition=0 offset=194 payload={'timestamp': '2026-04-06T14:09:54.865052+00:00', 'level': 'INFO', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:39:56,006 [INFO] Sent log to topic=logs partition=0 offset=195 payload={'timestamp': '2026-04-06T14:09:55.935877+00:00', 'level': 'INFO', 'message': 'Service dependency unavailable'}
+2026-04-06 19:39:57,067 [INFO] Sent log to topic=logs partition=0 offset=196 payload={'timestamp': '2026-04-06T14:09:57.006678+00:00', 'level': 'INFO', 'message': 'Background job completed'}
+2026-04-06 19:39:58,127 [INFO] Sent log to topic=logs partition=0 offset=197 payload={'timestamp': '2026-04-06T14:09:58.067922+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:39:59,188 [INFO] Sent log to topic=logs partition=0 offset=198 payload={'timestamp': '2026-04-06T14:09:59.127617+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:40:00,256 [INFO] Sent log to topic=logs partition=0 offset=199 payload={'timestamp': '2026-04-06T14:10:00.189255+00:00', 'level': 'INFO', 'message': 'Configuration file reloaded'}
+2026-04-06 19:40:01,324 [INFO] Sent log to topic=logs partition=0 offset=200 payload={'timestamp': '2026-04-06T14:10:01.257492+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:40:02,392 [INFO] Sent log to topic=logs partition=0 offset=201 payload={'timestamp': '2026-04-06T14:10:02.325519+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:40:03,448 [INFO] Sent log to topic=logs partition=0 offset=202 payload={'timestamp': '2026-04-06T14:10:03.393356+00:00', 'level': 'WARN', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:40:04,504 [INFO] Sent log to topic=logs partition=0 offset=203 payload={'timestamp': '2026-04-06T14:10:04.449464+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:40:05,564 [INFO] Sent log to topic=logs partition=0 offset=204 payload={'timestamp': '2026-04-06T14:10:05.506598+00:00', 'level': 'INFO', 'message': 'User session expired'}
+2026-04-06 19:40:06,620 [INFO] Sent log to topic=logs partition=0 offset=205 payload={'timestamp': '2026-04-06T14:10:06.565113+00:00', 'level': 'WARN', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:40:07,691 [INFO] Sent log to topic=logs partition=0 offset=206 payload={'timestamp': '2026-04-06T14:10:07.621792+00:00', 'level': 'ERROR', 'message': 'Database connection latency detected'}
+2026-04-06 19:40:08,755 [INFO] Sent log to topic=logs partition=0 offset=207 payload={'timestamp': '2026-04-06T14:10:08.693409+00:00', 'level': 'INFO', 'message': 'Database connection latency detected'}
+2026-04-06 19:40:09,817 [INFO] Sent log to topic=logs partition=0 offset=208 payload={'timestamp': '2026-04-06T14:10:09.756938+00:00', 'level': 'ERROR', 'message': 'Invalid customer input received'}
+2026-04-06 19:40:10,888 [INFO] Sent log to topic=logs partition=0 offset=209 payload={'timestamp': '2026-04-06T14:10:10.818448+00:00', 'level': 'INFO', 'message': 'User login successful'}
+2026-04-06 19:40:11,951 [INFO] Sent log to topic=logs partition=0 offset=210 payload={'timestamp': '2026-04-06T14:10:11.889504+00:00', 'level': 'INFO', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:40:13,012 [INFO] Sent log to topic=logs partition=0 offset=211 payload={'timestamp': '2026-04-06T14:10:12.952778+00:00', 'level': 'INFO', 'message': 'User login successful'}
+2026-04-06 19:40:14,079 [INFO] Sent log to topic=logs partition=0 offset=212 payload={'timestamp': '2026-04-06T14:10:14.013134+00:00', 'level': 'ERROR', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:40:15,137 [INFO] Sent log to topic=logs partition=0 offset=213 payload={'timestamp': '2026-04-06T14:10:15.079473+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:40:16,207 [INFO] Sent log to topic=logs partition=0 offset=214 payload={'timestamp': '2026-04-06T14:10:16.138819+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:40:17,268 [INFO] Sent log to topic=logs partition=0 offset=215 payload={'timestamp': '2026-04-06T14:10:17.207653+00:00', 'level': 'WARN', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:40:34,429 [INFO] <BrokerConnection node_id=bootstrap-0 host=host.docker.internal:9092 <connecting> [IPv4 ('192.168.1.76', 9092)]>: connecting to host.docker.internal:9092 [('192.168.1.76', 9092) IPv4]
+2026-04-06 19:40:34,431 [INFO] Probing node bootstrap-0 broker version
+2026-04-06 19:40:34,433 [INFO] <BrokerConnection node_id=bootstrap-0 host=host.docker.internal:9092 <connecting> [IPv4 ('192.168.1.76', 9092)]>: Connection complete.
+2026-04-06 19:40:34,541 [INFO] Broker version identified as 2.6.0
+2026-04-06 19:40:34,541 [INFO] Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+2026-04-06 19:40:34,548 [INFO] Kafka producer connected to host.docker.internal:9092 and publishing to topic 'logs'.
+2026-04-06 19:40:34,611 [INFO] <BrokerConnection node_id=1 host=host.docker.internal:9092 <connecting> [IPv4 ('192.168.1.76', 9092)]>: connecting to host.docker.internal:9092 [('192.168.1.76', 9092) IPv4]
+2026-04-06 19:40:34,612 [INFO] <BrokerConnection node_id=1 host=host.docker.internal:9092 <connecting> [IPv4 ('192.168.1.76', 9092)]>: Connection complete.
+2026-04-06 19:40:34,613 [INFO] <BrokerConnection node_id=bootstrap-0 host=host.docker.internal:9092 <connected> [IPv4 ('192.168.1.76', 9092)]>: Closing connection. 
+2026-04-06 19:40:34,622 [INFO] Sent log to topic=logs partition=0 offset=216 payload={'timestamp': '2026-04-06T14:10:34.548890+00:00', 'level': 'INFO', 'message': 'Service dependency unavailable'}
+2026-04-06 19:40:35,690 [INFO] Sent log to topic=logs partition=0 offset=217 payload={'timestamp': '2026-04-06T14:10:35.623247+00:00', 'level': 'INFO', 'message': 'Configuration file reloaded'}
+2026-04-06 19:40:36,751 [INFO] Sent log to topic=logs partition=0 offset=218 payload={'timestamp': '2026-04-06T14:10:36.690668+00:00', 'level': 'ERROR', 'message': 'Database connection latency detected'}
+2026-04-06 19:40:37,838 [INFO] Sent log to topic=logs partition=0 offset=219 payload={'timestamp': '2026-04-06T14:10:37.759082+00:00', 'level': 'WARN', 'message': 'File upload completed'}
+2026-04-06 19:40:38,907 [INFO] Sent log to topic=logs partition=0 offset=220 payload={'timestamp': '2026-04-06T14:10:38.839295+00:00', 'level': 'WARN', 'message': 'Database connection latency detected'}
+2026-04-06 19:40:39,965 [INFO] Sent log to topic=logs partition=0 offset=221 payload={'timestamp': '2026-04-06T14:10:39.908832+00:00', 'level': 'INFO', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:40:41,028 [INFO] Sent log to topic=logs partition=0 offset=222 payload={'timestamp': '2026-04-06T14:10:40.971296+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:40:42,089 [INFO] Sent log to topic=logs partition=0 offset=223 payload={'timestamp': '2026-04-06T14:10:42.028688+00:00', 'level': 'INFO', 'message': 'Database connection latency detected'}
+2026-04-06 19:40:43,152 [INFO] Sent log to topic=logs partition=0 offset=224 payload={'timestamp': '2026-04-06T14:10:43.090612+00:00', 'level': 'INFO', 'message': 'User login successful'}
+2026-04-06 19:40:44,214 [INFO] Sent log to topic=logs partition=0 offset=225 payload={'timestamp': '2026-04-06T14:10:44.153374+00:00', 'level': 'INFO', 'message': 'User session expired'}
+2026-04-06 19:40:45,271 [INFO] Sent log to topic=logs partition=0 offset=226 payload={'timestamp': '2026-04-06T14:10:45.215523+00:00', 'level': 'INFO', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:40:46,332 [INFO] Sent log to topic=logs partition=0 offset=227 payload={'timestamp': '2026-04-06T14:10:46.272079+00:00', 'level': 'INFO', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:40:47,390 [INFO] Sent log to topic=logs partition=0 offset=228 payload={'timestamp': '2026-04-06T14:10:47.333303+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:40:48,454 [INFO] Sent log to topic=logs partition=0 offset=229 payload={'timestamp': '2026-04-06T14:10:48.390509+00:00', 'level': 'WARN', 'message': 'File upload completed'}
+2026-04-06 19:40:49,513 [INFO] Sent log to topic=logs partition=0 offset=230 payload={'timestamp': '2026-04-06T14:10:49.456858+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:40:50,575 [INFO] Sent log to topic=logs partition=0 offset=231 payload={'timestamp': '2026-04-06T14:10:50.514391+00:00', 'level': 'ERROR', 'message': 'Invalid customer input received'}
+2026-04-06 19:40:51,634 [INFO] Sent log to topic=logs partition=0 offset=232 payload={'timestamp': '2026-04-06T14:10:51.576092+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:40:52,699 [INFO] Sent log to topic=logs partition=0 offset=233 payload={'timestamp': '2026-04-06T14:10:52.634834+00:00', 'level': 'INFO', 'message': 'Configuration file reloaded'}
+2026-04-06 19:40:53,769 [INFO] Sent log to topic=logs partition=0 offset=234 payload={'timestamp': '2026-04-06T14:10:53.700249+00:00', 'level': 'WARN', 'message': 'User session expired'}
+2026-04-06 19:40:54,832 [INFO] Sent log to topic=logs partition=0 offset=235 payload={'timestamp': '2026-04-06T14:10:54.770006+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:40:55,891 [INFO] Sent log to topic=logs partition=0 offset=236 payload={'timestamp': '2026-04-06T14:10:55.832686+00:00', 'level': 'ERROR', 'message': 'File upload completed'}
+2026-04-06 19:40:56,952 [INFO] Sent log to topic=logs partition=0 offset=237 payload={'timestamp': '2026-04-06T14:10:56.891900+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:40:58,012 [INFO] Sent log to topic=logs partition=0 offset=238 payload={'timestamp': '2026-04-06T14:10:57.953220+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:40:59,074 [INFO] Sent log to topic=logs partition=0 offset=239 payload={'timestamp': '2026-04-06T14:10:59.013036+00:00', 'level': 'INFO', 'message': 'Service dependency unavailable'}
+2026-04-06 19:41:00,130 [INFO] Sent log to topic=logs partition=0 offset=240 payload={'timestamp': '2026-04-06T14:11:00.074517+00:00', 'level': 'INFO', 'message': 'Configuration file reloaded'}
+2026-04-06 19:41:01,188 [INFO] Sent log to topic=logs partition=0 offset=241 payload={'timestamp': '2026-04-06T14:11:01.131059+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:41:02,245 [INFO] Sent log to topic=logs partition=0 offset=242 payload={'timestamp': '2026-04-06T14:11:02.189339+00:00', 'level': 'INFO', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:41:03,312 [INFO] Sent log to topic=logs partition=0 offset=243 payload={'timestamp': '2026-04-06T14:11:03.246430+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:41:04,369 [INFO] Sent log to topic=logs partition=0 offset=244 payload={'timestamp': '2026-04-06T14:11:04.312611+00:00', 'level': 'INFO', 'message': 'Database connection latency detected'}
+2026-04-06 19:41:05,427 [INFO] Sent log to topic=logs partition=0 offset=245 payload={'timestamp': '2026-04-06T14:11:05.369995+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:41:06,488 [INFO] Sent log to topic=logs partition=0 offset=246 payload={'timestamp': '2026-04-06T14:11:06.428574+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:41:07,546 [INFO] Sent log to topic=logs partition=0 offset=247 payload={'timestamp': '2026-04-06T14:11:07.489176+00:00', 'level': 'ERROR', 'message': 'Payment request received'}
+2026-04-06 19:41:08,608 [INFO] Sent log to topic=logs partition=0 offset=248 payload={'timestamp': '2026-04-06T14:11:08.547574+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:41:09,669 [INFO] Sent log to topic=logs partition=0 offset=249 payload={'timestamp': '2026-04-06T14:11:09.609202+00:00', 'level': 'ERROR', 'message': 'Invalid customer input received'}
+2026-04-06 19:41:10,727 [INFO] Sent log to topic=logs partition=0 offset=250 payload={'timestamp': '2026-04-06T14:11:10.669875+00:00', 'level': 'WARN', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:41:11,790 [INFO] Sent log to topic=logs partition=0 offset=251 payload={'timestamp': '2026-04-06T14:11:11.728136+00:00', 'level': 'WARN', 'message': 'Database connection latency detected'}
+2026-04-06 19:41:12,850 [INFO] Sent log to topic=logs partition=0 offset=252 payload={'timestamp': '2026-04-06T14:11:12.791233+00:00', 'level': 'WARN', 'message': 'Background job completed'}
+2026-04-06 19:41:13,911 [INFO] Sent log to topic=logs partition=0 offset=253 payload={'timestamp': '2026-04-06T14:11:13.851811+00:00', 'level': 'ERROR', 'message': 'File upload completed'}
+2026-04-06 19:41:14,971 [INFO] Sent log to topic=logs partition=0 offset=254 payload={'timestamp': '2026-04-06T14:11:14.911519+00:00', 'level': 'ERROR', 'message': 'Background job completed'}
+2026-04-06 19:41:16,030 [INFO] Sent log to topic=logs partition=0 offset=255 payload={'timestamp': '2026-04-06T14:11:15.972576+00:00', 'level': 'INFO', 'message': 'Service dependency unavailable'}
+2026-04-06 19:41:17,088 [INFO] Sent log to topic=logs partition=0 offset=256 payload={'timestamp': '2026-04-06T14:11:17.032938+00:00', 'level': 'ERROR', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:41:18,146 [INFO] Sent log to topic=logs partition=0 offset=257 payload={'timestamp': '2026-04-06T14:11:18.089382+00:00', 'level': 'INFO', 'message': 'Configuration file reloaded'}
+2026-04-06 19:41:19,210 [INFO] Sent log to topic=logs partition=0 offset=258 payload={'timestamp': '2026-04-06T14:11:19.147185+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:41:20,273 [INFO] Sent log to topic=logs partition=0 offset=259 payload={'timestamp': '2026-04-06T14:11:20.211036+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:41:21,332 [INFO] Sent log to topic=logs partition=0 offset=260 payload={'timestamp': '2026-04-06T14:11:21.274380+00:00', 'level': 'INFO', 'message': 'User session expired'}
+2026-04-06 19:41:22,392 [INFO] Sent log to topic=logs partition=0 offset=261 payload={'timestamp': '2026-04-06T14:11:22.333254+00:00', 'level': 'WARN', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:41:23,453 [INFO] Sent log to topic=logs partition=0 offset=262 payload={'timestamp': '2026-04-06T14:11:23.392731+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:41:24,515 [INFO] Sent log to topic=logs partition=0 offset=263 payload={'timestamp': '2026-04-06T14:11:24.454684+00:00', 'level': 'INFO', 'message': 'Invalid customer input received'}
+2026-04-06 19:41:25,573 [INFO] Sent log to topic=logs partition=0 offset=264 payload={'timestamp': '2026-04-06T14:11:25.516342+00:00', 'level': 'INFO', 'message': 'Configuration file reloaded'}
+2026-04-06 19:41:26,632 [INFO] Sent log to topic=logs partition=0 offset=265 payload={'timestamp': '2026-04-06T14:11:26.574162+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:41:27,695 [INFO] Sent log to topic=logs partition=0 offset=266 payload={'timestamp': '2026-04-06T14:11:27.633468+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:41:28,753 [INFO] Sent log to topic=logs partition=0 offset=267 payload={'timestamp': '2026-04-06T14:11:28.696358+00:00', 'level': 'WARN', 'message': 'User session expired'}
+2026-04-06 19:41:29,816 [INFO] Sent log to topic=logs partition=0 offset=268 payload={'timestamp': '2026-04-06T14:11:29.753806+00:00', 'level': 'WARN', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:41:30,875 [INFO] Sent log to topic=logs partition=0 offset=269 payload={'timestamp': '2026-04-06T14:11:30.817595+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:41:31,935 [INFO] Sent log to topic=logs partition=0 offset=270 payload={'timestamp': '2026-04-06T14:11:31.876021+00:00', 'level': 'WARN', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:41:32,995 [INFO] Sent log to topic=logs partition=0 offset=271 payload={'timestamp': '2026-04-06T14:11:32.935957+00:00', 'level': 'INFO', 'message': 'User session expired'}
+2026-04-06 19:41:34,058 [INFO] Sent log to topic=logs partition=0 offset=272 payload={'timestamp': '2026-04-06T14:11:33.996362+00:00', 'level': 'ERROR', 'message': 'Payment request received'}
+2026-04-06 19:41:35,129 [INFO] Sent log to topic=logs partition=0 offset=273 payload={'timestamp': '2026-04-06T14:11:35.060933+00:00', 'level': 'INFO', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:41:36,195 [INFO] Sent log to topic=logs partition=0 offset=274 payload={'timestamp': '2026-04-06T14:11:36.130092+00:00', 'level': 'WARN', 'message': 'Background job completed'}
+2026-04-06 19:41:37,257 [INFO] Sent log to topic=logs partition=0 offset=275 payload={'timestamp': '2026-04-06T14:11:37.195639+00:00', 'level': 'ERROR', 'message': 'File upload completed'}
+2026-04-06 19:41:38,316 [INFO] Sent log to topic=logs partition=0 offset=276 payload={'timestamp': '2026-04-06T14:11:38.258770+00:00', 'level': 'INFO', 'message': 'User login successful'}
+2026-04-06 19:41:39,373 [INFO] Sent log to topic=logs partition=0 offset=277 payload={'timestamp': '2026-04-06T14:11:39.317236+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:41:40,434 [INFO] Sent log to topic=logs partition=0 offset=278 payload={'timestamp': '2026-04-06T14:11:40.374516+00:00', 'level': 'INFO', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:41:41,492 [INFO] Sent log to topic=logs partition=0 offset=279 payload={'timestamp': '2026-04-06T14:11:41.435182+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:41:42,559 [INFO] Sent log to topic=logs partition=0 offset=280 payload={'timestamp': '2026-04-06T14:11:42.492664+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:41:43,620 [INFO] Sent log to topic=logs partition=0 offset=281 payload={'timestamp': '2026-04-06T14:11:43.560679+00:00', 'level': 'ERROR', 'message': 'User session expired'}
+2026-04-06 19:41:44,692 [INFO] Sent log to topic=logs partition=0 offset=282 payload={'timestamp': '2026-04-06T14:11:44.620754+00:00', 'level': 'ERROR', 'message': 'User login successful'}
+2026-04-06 19:41:45,748 [INFO] Sent log to topic=logs partition=0 offset=283 payload={'timestamp': '2026-04-06T14:11:45.693137+00:00', 'level': 'ERROR', 'message': 'File upload completed'}
+2026-04-06 19:41:46,810 [INFO] Sent log to topic=logs partition=0 offset=284 payload={'timestamp': '2026-04-06T14:11:46.749475+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:41:47,866 [INFO] Sent log to topic=logs partition=0 offset=285 payload={'timestamp': '2026-04-06T14:11:47.810829+00:00', 'level': 'WARN', 'message': 'Database connection latency detected'}
+2026-04-06 19:41:48,926 [INFO] Sent log to topic=logs partition=0 offset=286 payload={'timestamp': '2026-04-06T14:11:48.866887+00:00', 'level': 'ERROR', 'message': 'Invalid customer input received'}
+2026-04-06 19:41:49,991 [INFO] Sent log to topic=logs partition=0 offset=287 payload={'timestamp': '2026-04-06T14:11:49.926959+00:00', 'level': 'ERROR', 'message': 'User session expired'}
+2026-04-06 19:41:51,057 [INFO] Sent log to topic=logs partition=0 offset=288 payload={'timestamp': '2026-04-06T14:11:50.992596+00:00', 'level': 'ERROR', 'message': 'User login successful'}
+2026-04-06 19:41:52,116 [INFO] Sent log to topic=logs partition=0 offset=289 payload={'timestamp': '2026-04-06T14:11:52.057967+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:41:53,177 [INFO] Sent log to topic=logs partition=0 offset=290 payload={'timestamp': '2026-04-06T14:11:53.118398+00:00', 'level': 'WARN', 'message': 'Configuration file reloaded'}
+2026-04-06 19:41:54,235 [INFO] Sent log to topic=logs partition=0 offset=291 payload={'timestamp': '2026-04-06T14:11:54.178204+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:41:55,291 [INFO] Sent log to topic=logs partition=0 offset=292 payload={'timestamp': '2026-04-06T14:11:55.236205+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:41:56,349 [INFO] Sent log to topic=logs partition=0 offset=293 payload={'timestamp': '2026-04-06T14:11:56.292136+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:41:57,410 [INFO] Sent log to topic=logs partition=0 offset=294 payload={'timestamp': '2026-04-06T14:11:57.350222+00:00', 'level': 'INFO', 'message': 'User session expired'}
+2026-04-06 19:41:58,472 [INFO] Sent log to topic=logs partition=0 offset=295 payload={'timestamp': '2026-04-06T14:11:58.411652+00:00', 'level': 'ERROR', 'message': 'Database connection latency detected'}
+2026-04-06 19:41:59,531 [INFO] Sent log to topic=logs partition=0 offset=296 payload={'timestamp': '2026-04-06T14:11:59.472705+00:00', 'level': 'WARN', 'message': 'Configuration file reloaded'}
+2026-04-06 19:42:00,592 [INFO] Sent log to topic=logs partition=0 offset=297 payload={'timestamp': '2026-04-06T14:12:00.532097+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:42:01,652 [INFO] Sent log to topic=logs partition=0 offset=298 payload={'timestamp': '2026-04-06T14:12:01.592960+00:00', 'level': 'INFO', 'message': 'User session expired'}
+2026-04-06 19:42:02,714 [INFO] Sent log to topic=logs partition=0 offset=299 payload={'timestamp': '2026-04-06T14:12:02.652835+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:42:03,773 [INFO] Sent log to topic=logs partition=0 offset=300 payload={'timestamp': '2026-04-06T14:12:03.715373+00:00', 'level': 'ERROR', 'message': 'Background job completed'}
+2026-04-06 19:42:04,837 [INFO] Sent log to topic=logs partition=0 offset=301 payload={'timestamp': '2026-04-06T14:12:04.774281+00:00', 'level': 'ERROR', 'message': 'Invalid customer input received'}
+2026-04-06 19:42:05,897 [INFO] Sent log to topic=logs partition=0 offset=302 payload={'timestamp': '2026-04-06T14:12:05.837971+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:42:06,960 [INFO] Sent log to topic=logs partition=0 offset=303 payload={'timestamp': '2026-04-06T14:12:06.898296+00:00', 'level': 'INFO', 'message': 'Background job completed'}
+2026-04-06 19:42:08,020 [INFO] Sent log to topic=logs partition=0 offset=304 payload={'timestamp': '2026-04-06T14:12:07.961042+00:00', 'level': 'ERROR', 'message': 'User session expired'}
+2026-04-06 19:42:09,077 [INFO] Sent log to topic=logs partition=0 offset=305 payload={'timestamp': '2026-04-06T14:12:09.021013+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:42:10,134 [INFO] Sent log to topic=logs partition=0 offset=306 payload={'timestamp': '2026-04-06T14:12:10.078734+00:00', 'level': 'ERROR', 'message': 'Background job completed'}
+2026-04-06 19:42:11,198 [INFO] Sent log to topic=logs partition=0 offset=307 payload={'timestamp': '2026-04-06T14:12:11.134643+00:00', 'level': 'ERROR', 'message': 'Database connection latency detected'}
+2026-04-06 19:42:12,261 [INFO] Sent log to topic=logs partition=0 offset=308 payload={'timestamp': '2026-04-06T14:12:12.199260+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:42:13,324 [INFO] Sent log to topic=logs partition=0 offset=309 payload={'timestamp': '2026-04-06T14:12:13.261772+00:00', 'level': 'WARN', 'message': 'Configuration file reloaded'}
+2026-04-06 19:42:14,384 [INFO] Sent log to topic=logs partition=0 offset=310 payload={'timestamp': '2026-04-06T14:12:14.324486+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:42:15,446 [INFO] Sent log to topic=logs partition=0 offset=311 payload={'timestamp': '2026-04-06T14:12:15.385356+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:42:16,503 [INFO] Sent log to topic=logs partition=0 offset=312 payload={'timestamp': '2026-04-06T14:12:16.447579+00:00', 'level': 'INFO', 'message': 'Payment request received'}
+2026-04-06 19:42:17,570 [INFO] Sent log to topic=logs partition=0 offset=313 payload={'timestamp': '2026-04-06T14:12:17.503871+00:00', 'level': 'INFO', 'message': 'User session expired'}
+2026-04-06 19:42:18,628 [INFO] Sent log to topic=logs partition=0 offset=314 payload={'timestamp': '2026-04-06T14:12:18.571215+00:00', 'level': 'ERROR', 'message': 'Invalid customer input received'}
+2026-04-06 19:42:19,755 [INFO] Sent log to topic=logs partition=0 offset=315 payload={'timestamp': '2026-04-06T14:12:19.628698+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:42:20,815 [INFO] Sent log to topic=logs partition=0 offset=316 payload={'timestamp': '2026-04-06T14:12:20.755805+00:00', 'level': 'ERROR', 'message': 'Background job completed'}
+2026-04-06 19:42:21,876 [INFO] Sent log to topic=logs partition=0 offset=317 payload={'timestamp': '2026-04-06T14:12:21.816023+00:00', 'level': 'WARN', 'message': 'Configuration file reloaded'}
+2026-04-06 19:42:22,936 [INFO] Sent log to topic=logs partition=0 offset=318 payload={'timestamp': '2026-04-06T14:12:22.876901+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:42:24,002 [INFO] Sent log to topic=logs partition=0 offset=319 payload={'timestamp': '2026-04-06T14:12:23.937327+00:00', 'level': 'WARN', 'message': 'Database connection latency detected'}
+2026-04-06 19:42:25,071 [INFO] Sent log to topic=logs partition=0 offset=320 payload={'timestamp': '2026-04-06T14:12:25.003624+00:00', 'level': 'WARN', 'message': 'User session expired'}
+2026-04-06 19:42:26,135 [INFO] Sent log to topic=logs partition=0 offset=322 payload={'timestamp': '2026-04-06T14:12:26.072276+00:00', 'level': 'INFO', 'message': 'Invalid customer input received'}
+2026-04-06 19:42:27,193 [INFO] Sent log to topic=logs partition=0 offset=324 payload={'timestamp': '2026-04-06T14:12:27.136383+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:42:28,261 [INFO] Sent log to topic=logs partition=0 offset=326 payload={'timestamp': '2026-04-06T14:12:28.194208+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:42:29,323 [INFO] Sent log to topic=logs partition=0 offset=328 payload={'timestamp': '2026-04-06T14:12:29.262610+00:00', 'level': 'ERROR', 'message': 'User session expired'}
+2026-04-06 19:42:30,387 [INFO] Sent log to topic=logs partition=0 offset=330 payload={'timestamp': '2026-04-06T14:12:30.324473+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:42:31,455 [INFO] Sent log to topic=logs partition=0 offset=332 payload={'timestamp': '2026-04-06T14:12:31.388634+00:00', 'level': 'WARN', 'message': 'Database connection latency detected'}
+2026-04-06 19:42:32,520 [INFO] Sent log to topic=logs partition=0 offset=334 payload={'timestamp': '2026-04-06T14:12:32.456279+00:00', 'level': 'ERROR', 'message': 'File upload completed'}
+2026-04-06 19:42:33,578 [INFO] Sent log to topic=logs partition=0 offset=336 payload={'timestamp': '2026-04-06T14:12:33.521614+00:00', 'level': 'INFO', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:42:34,644 [INFO] Sent log to topic=logs partition=0 offset=338 payload={'timestamp': '2026-04-06T14:12:34.579112+00:00', 'level': 'INFO', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:42:35,709 [INFO] Sent log to topic=logs partition=0 offset=340 payload={'timestamp': '2026-04-06T14:12:35.644956+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:42:36,774 [INFO] Sent log to topic=logs partition=0 offset=342 payload={'timestamp': '2026-04-06T14:12:36.710222+00:00', 'level': 'INFO', 'message': 'User session expired'}
+2026-04-06 19:42:37,841 [INFO] Sent log to topic=logs partition=0 offset=344 payload={'timestamp': '2026-04-06T14:12:37.775174+00:00', 'level': 'WARN', 'message': 'Configuration file reloaded'}
+2026-04-06 19:42:38,902 [INFO] Sent log to topic=logs partition=0 offset=346 payload={'timestamp': '2026-04-06T14:12:38.842201+00:00', 'level': 'ERROR', 'message': 'User login successful'}
+2026-04-06 19:42:39,963 [INFO] Sent log to topic=logs partition=0 offset=348 payload={'timestamp': '2026-04-06T14:12:39.902833+00:00', 'level': 'WARN', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:42:41,029 [INFO] Sent log to topic=logs partition=0 offset=350 payload={'timestamp': '2026-04-06T14:12:40.966835+00:00', 'level': 'ERROR', 'message': 'File upload completed'}
+2026-04-06 19:42:42,089 [INFO] Sent log to topic=logs partition=0 offset=352 payload={'timestamp': '2026-04-06T14:12:42.030047+00:00', 'level': 'INFO', 'message': 'Payment request received'}
+2026-04-06 19:42:43,160 [INFO] Sent log to topic=logs partition=0 offset=354 payload={'timestamp': '2026-04-06T14:12:43.090450+00:00', 'level': 'WARN', 'message': 'Configuration file reloaded'}
+2026-04-06 19:42:44,227 [INFO] Sent log to topic=logs partition=0 offset=356 payload={'timestamp': '2026-04-06T14:12:44.160825+00:00', 'level': 'INFO', 'message': 'User login successful'}
+2026-04-06 19:42:45,290 [INFO] Sent log to topic=logs partition=0 offset=358 payload={'timestamp': '2026-04-06T14:12:45.228615+00:00', 'level': 'ERROR', 'message': 'User session expired'}
+2026-04-06 19:42:46,351 [INFO] Sent log to topic=logs partition=0 offset=360 payload={'timestamp': '2026-04-06T14:12:46.290876+00:00', 'level': 'INFO', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:42:47,407 [INFO] Sent log to topic=logs partition=0 offset=362 payload={'timestamp': '2026-04-06T14:12:47.351542+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:42:48,466 [INFO] Sent log to topic=logs partition=0 offset=364 payload={'timestamp': '2026-04-06T14:12:48.408926+00:00', 'level': 'INFO', 'message': 'Background job completed'}
+2026-04-06 19:42:49,531 [INFO] Sent log to topic=logs partition=0 offset=366 payload={'timestamp': '2026-04-06T14:12:49.466862+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:42:50,598 [INFO] Sent log to topic=logs partition=0 offset=368 payload={'timestamp': '2026-04-06T14:12:50.531672+00:00', 'level': 'INFO', 'message': 'Service dependency unavailable'}
+2026-04-06 19:42:51,658 [INFO] Sent log to topic=logs partition=0 offset=370 payload={'timestamp': '2026-04-06T14:12:51.599327+00:00', 'level': 'WARN', 'message': 'File upload completed'}
+2026-04-06 19:42:52,725 [INFO] Sent log to topic=logs partition=0 offset=372 payload={'timestamp': '2026-04-06T14:12:52.658801+00:00', 'level': 'ERROR', 'message': 'User session expired'}
+2026-04-06 19:42:53,790 [INFO] Sent log to topic=logs partition=0 offset=374 payload={'timestamp': '2026-04-06T14:12:53.726006+00:00', 'level': 'ERROR', 'message': 'User session expired'}
+2026-04-06 19:42:54,853 [INFO] Sent log to topic=logs partition=0 offset=376 payload={'timestamp': '2026-04-06T14:12:54.791806+00:00', 'level': 'WARN', 'message': 'Payment request received'}
+2026-04-06 19:42:55,955 [INFO] Sent log to topic=logs partition=0 offset=378 payload={'timestamp': '2026-04-06T14:12:55.884853+00:00', 'level': 'ERROR', 'message': 'Invalid customer input received'}
+2026-04-06 19:42:57,012 [INFO] Sent log to topic=logs partition=0 offset=380 payload={'timestamp': '2026-04-06T14:12:56.956518+00:00', 'level': 'INFO', 'message': 'Configuration file reloaded'}
+2026-04-06 19:42:58,081 [INFO] Sent log to topic=logs partition=0 offset=382 payload={'timestamp': '2026-04-06T14:12:58.013214+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:42:59,142 [INFO] Sent log to topic=logs partition=0 offset=384 payload={'timestamp': '2026-04-06T14:12:59.081942+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:43:00,208 [INFO] Sent log to topic=logs partition=0 offset=386 payload={'timestamp': '2026-04-06T14:13:00.143514+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:43:01,272 [INFO] Sent log to topic=logs partition=0 offset=388 payload={'timestamp': '2026-04-06T14:13:01.209423+00:00', 'level': 'ERROR', 'message': 'Background job completed'}
+2026-04-06 19:43:02,330 [INFO] Sent log to topic=logs partition=0 offset=390 payload={'timestamp': '2026-04-06T14:13:02.273015+00:00', 'level': 'WARN', 'message': 'Payment request received'}
+2026-04-06 19:43:03,401 [INFO] Sent log to topic=logs partition=0 offset=392 payload={'timestamp': '2026-04-06T14:13:03.331758+00:00', 'level': 'ERROR', 'message': 'Background job completed'}
+2026-04-06 19:43:04,514 [INFO] Sent log to topic=logs partition=0 offset=394 payload={'timestamp': '2026-04-06T14:13:04.401848+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:43:05,575 [INFO] Sent log to topic=logs partition=0 offset=396 payload={'timestamp': '2026-04-06T14:13:05.515183+00:00', 'level': 'INFO', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:43:06,653 [INFO] Sent log to topic=logs partition=0 offset=398 payload={'timestamp': '2026-04-06T14:13:06.575693+00:00', 'level': 'WARN', 'message': 'File upload completed'}
+2026-04-06 19:43:07,724 [INFO] Sent log to topic=logs partition=0 offset=400 payload={'timestamp': '2026-04-06T14:13:07.654044+00:00', 'level': 'ERROR', 'message': 'Invalid customer input received'}
+2026-04-06 19:43:08,787 [INFO] Sent log to topic=logs partition=0 offset=402 payload={'timestamp': '2026-04-06T14:13:08.725666+00:00', 'level': 'WARN', 'message': 'Payment request received'}
+2026-04-06 19:43:09,853 [INFO] Sent log to topic=logs partition=0 offset=404 payload={'timestamp': '2026-04-06T14:13:09.788097+00:00', 'level': 'INFO', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:43:10,921 [INFO] Sent log to topic=logs partition=0 offset=406 payload={'timestamp': '2026-04-06T14:13:10.854141+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:43:11,980 [INFO] Sent log to topic=logs partition=0 offset=408 payload={'timestamp': '2026-04-06T14:13:11.921963+00:00', 'level': 'WARN', 'message': 'Configuration file reloaded'}
+2026-04-06 19:43:13,044 [INFO] Sent log to topic=logs partition=0 offset=410 payload={'timestamp': '2026-04-06T14:13:12.980802+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:43:14,106 [INFO] Sent log to topic=logs partition=0 offset=412 payload={'timestamp': '2026-04-06T14:13:14.044832+00:00', 'level': 'INFO', 'message': 'User session expired'}
+2026-04-06 19:43:15,169 [INFO] Sent log to topic=logs partition=0 offset=414 payload={'timestamp': '2026-04-06T14:13:15.106856+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:43:16,233 [INFO] Sent log to topic=logs partition=0 offset=416 payload={'timestamp': '2026-04-06T14:13:16.170431+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:43:17,296 [INFO] Sent log to topic=logs partition=0 offset=418 payload={'timestamp': '2026-04-06T14:13:17.234172+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:43:18,357 [INFO] Sent log to topic=logs partition=0 offset=420 payload={'timestamp': '2026-04-06T14:13:18.297505+00:00', 'level': 'INFO', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:43:19,427 [INFO] Sent log to topic=logs partition=0 offset=422 payload={'timestamp': '2026-04-06T14:13:19.358226+00:00', 'level': 'WARN', 'message': 'Payment request received'}
+2026-04-06 19:43:20,498 [INFO] Sent log to topic=logs partition=0 offset=424 payload={'timestamp': '2026-04-06T14:13:20.428225+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:43:21,559 [INFO] Sent log to topic=logs partition=0 offset=426 payload={'timestamp': '2026-04-06T14:13:21.498836+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:43:22,625 [INFO] Sent log to topic=logs partition=0 offset=428 payload={'timestamp': '2026-04-06T14:13:22.560236+00:00', 'level': 'ERROR', 'message': 'File upload completed'}
+2026-04-06 19:43:23,692 [INFO] Sent log to topic=logs partition=0 offset=430 payload={'timestamp': '2026-04-06T14:13:23.625969+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:43:24,753 [INFO] Sent log to topic=logs partition=0 offset=432 payload={'timestamp': '2026-04-06T14:13:24.692989+00:00', 'level': 'INFO', 'message': 'Payment request received'}
+2026-04-06 19:43:25,815 [INFO] Sent log to topic=logs partition=0 offset=434 payload={'timestamp': '2026-04-06T14:13:25.754776+00:00', 'level': 'INFO', 'message': 'Payment request received'}
+2026-04-06 19:43:26,882 [INFO] Sent log to topic=logs partition=0 offset=436 payload={'timestamp': '2026-04-06T14:13:26.816118+00:00', 'level': 'WARN', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:43:27,957 [INFO] Sent log to topic=logs partition=0 offset=438 payload={'timestamp': '2026-04-06T14:13:27.889746+00:00', 'level': 'WARN', 'message': 'File upload completed'}
+2026-04-06 19:43:29,015 [INFO] Sent log to topic=logs partition=0 offset=440 payload={'timestamp': '2026-04-06T14:13:28.958716+00:00', 'level': 'WARN', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:43:30,079 [INFO] Sent log to topic=logs partition=0 offset=442 payload={'timestamp': '2026-04-06T14:13:30.015862+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:43:31,135 [INFO] Sent log to topic=logs partition=0 offset=444 payload={'timestamp': '2026-04-06T14:13:31.079946+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:43:32,254 [INFO] Sent log to topic=logs partition=0 offset=446 payload={'timestamp': '2026-04-06T14:13:32.136508+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:43:33,311 [INFO] Sent log to topic=logs partition=0 offset=448 payload={'timestamp': '2026-04-06T14:13:33.255665+00:00', 'level': 'ERROR', 'message': 'User session expired'}
+2026-04-06 19:43:34,429 [INFO] Sent log to topic=logs partition=0 offset=450 payload={'timestamp': '2026-04-06T14:13:34.329683+00:00', 'level': 'WARN', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:43:35,501 [INFO] Sent log to topic=logs partition=0 offset=452 payload={'timestamp': '2026-04-06T14:13:35.430880+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:43:36,560 [INFO] Sent log to topic=logs partition=0 offset=454 payload={'timestamp': '2026-04-06T14:13:36.502385+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:43:37,627 [INFO] Sent log to topic=logs partition=0 offset=456 payload={'timestamp': '2026-04-06T14:13:37.561516+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:43:38,689 [INFO] Sent log to topic=logs partition=0 offset=458 payload={'timestamp': '2026-04-06T14:13:38.628356+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:43:39,749 [INFO] Sent log to topic=logs partition=0 offset=460 payload={'timestamp': '2026-04-06T14:13:39.689533+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:43:40,822 [INFO] Sent log to topic=logs partition=0 offset=462 payload={'timestamp': '2026-04-06T14:13:40.750005+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:43:41,881 [INFO] Sent log to topic=logs partition=0 offset=464 payload={'timestamp': '2026-04-06T14:13:41.822546+00:00', 'level': 'INFO', 'message': 'Invalid customer input received'}
+2026-04-06 19:43:42,940 [INFO] Sent log to topic=logs partition=0 offset=466 payload={'timestamp': '2026-04-06T14:13:42.882119+00:00', 'level': 'INFO', 'message': 'Background job completed'}
+2026-04-06 19:43:44,009 [INFO] Sent log to topic=logs partition=0 offset=468 payload={'timestamp': '2026-04-06T14:13:43.941186+00:00', 'level': 'INFO', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:43:45,067 [INFO] Sent log to topic=logs partition=0 offset=470 payload={'timestamp': '2026-04-06T14:13:45.009995+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:43:46,136 [INFO] Sent log to topic=logs partition=0 offset=472 payload={'timestamp': '2026-04-06T14:13:46.068630+00:00', 'level': 'WARN', 'message': 'User session expired'}
+2026-04-06 19:43:47,203 [INFO] Sent log to topic=logs partition=0 offset=474 payload={'timestamp': '2026-04-06T14:13:47.136980+00:00', 'level': 'WARN', 'message': 'Background job completed'}
+2026-04-06 19:43:48,262 [INFO] Sent log to topic=logs partition=0 offset=476 payload={'timestamp': '2026-04-06T14:13:48.204526+00:00', 'level': 'WARN', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:43:49,350 [INFO] Sent log to topic=logs partition=0 offset=478 payload={'timestamp': '2026-04-06T14:13:49.282730+00:00', 'level': 'ERROR', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:43:50,408 [INFO] Sent log to topic=logs partition=0 offset=480 payload={'timestamp': '2026-04-06T14:13:50.350875+00:00', 'level': 'ERROR', 'message': 'Invalid customer input received'}
+2026-04-06 19:43:51,477 [INFO] Sent log to topic=logs partition=0 offset=482 payload={'timestamp': '2026-04-06T14:13:51.409433+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:43:52,540 [INFO] Sent log to topic=logs partition=0 offset=484 payload={'timestamp': '2026-04-06T14:13:52.477458+00:00', 'level': 'ERROR', 'message': 'Payment request received'}
+2026-04-06 19:43:53,603 [INFO] Sent log to topic=logs partition=0 offset=486 payload={'timestamp': '2026-04-06T14:13:53.541086+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:43:54,668 [INFO] Sent log to topic=logs partition=0 offset=488 payload={'timestamp': '2026-04-06T14:13:54.604633+00:00', 'level': 'INFO', 'message': 'Invalid customer input received'}
+2026-04-06 19:43:55,774 [INFO] Sent log to topic=logs partition=0 offset=490 payload={'timestamp': '2026-04-06T14:13:55.703851+00:00', 'level': 'INFO', 'message': 'Service dependency unavailable'}
+2026-04-06 19:43:56,846 [INFO] Sent log to topic=logs partition=0 offset=492 payload={'timestamp': '2026-04-06T14:13:56.775418+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:43:57,914 [INFO] Sent log to topic=logs partition=0 offset=494 payload={'timestamp': '2026-04-06T14:13:57.847432+00:00', 'level': 'WARN', 'message': 'Background job completed'}
+2026-04-06 19:43:58,975 [INFO] Sent log to topic=logs partition=0 offset=496 payload={'timestamp': '2026-04-06T14:13:58.914978+00:00', 'level': 'WARN', 'message': 'User session expired'}
+2026-04-06 19:44:00,035 [INFO] Sent log to topic=logs partition=0 offset=498 payload={'timestamp': '2026-04-06T14:13:59.976838+00:00', 'level': 'WARN', 'message': 'User session expired'}
+2026-04-06 19:44:01,096 [INFO] Sent log to topic=logs partition=0 offset=500 payload={'timestamp': '2026-04-06T14:14:01.035647+00:00', 'level': 'ERROR', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:44:02,154 [INFO] Sent log to topic=logs partition=0 offset=502 payload={'timestamp': '2026-04-06T14:14:02.097795+00:00', 'level': 'INFO', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:44:03,224 [INFO] Sent log to topic=logs partition=0 offset=504 payload={'timestamp': '2026-04-06T14:14:03.155444+00:00', 'level': 'INFO', 'message': 'Service dependency unavailable'}
+2026-04-06 19:44:04,284 [INFO] Sent log to topic=logs partition=0 offset=506 payload={'timestamp': '2026-04-06T14:14:04.224963+00:00', 'level': 'INFO', 'message': 'Payment request received'}
+2026-04-06 19:44:05,345 [INFO] Sent log to topic=logs partition=0 offset=508 payload={'timestamp': '2026-04-06T14:14:05.285432+00:00', 'level': 'INFO', 'message': 'Payment request received'}
+2026-04-06 19:44:06,431 [INFO] Sent log to topic=logs partition=0 offset=510 payload={'timestamp': '2026-04-06T14:14:06.347008+00:00', 'level': 'ERROR', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:44:07,500 [INFO] Sent log to topic=logs partition=0 offset=512 payload={'timestamp': '2026-04-06T14:14:07.432553+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:44:08,630 [INFO] Sent log to topic=logs partition=0 offset=514 payload={'timestamp': '2026-04-06T14:14:08.501682+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:44:09,689 [INFO] Sent log to topic=logs partition=0 offset=516 payload={'timestamp': '2026-04-06T14:14:09.631934+00:00', 'level': 'ERROR', 'message': 'Database connection latency detected'}
+2026-04-06 19:44:10,748 [INFO] Sent log to topic=logs partition=0 offset=518 payload={'timestamp': '2026-04-06T14:14:10.690326+00:00', 'level': 'ERROR', 'message': 'Background job completed'}
+2026-04-06 19:44:11,816 [INFO] Sent log to topic=logs partition=0 offset=520 payload={'timestamp': '2026-04-06T14:14:11.748714+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:44:12,880 [INFO] Sent log to topic=logs partition=0 offset=522 payload={'timestamp': '2026-04-06T14:14:12.817065+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:44:13,946 [INFO] Sent log to topic=logs partition=0 offset=524 payload={'timestamp': '2026-04-06T14:14:13.881724+00:00', 'level': 'INFO', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:44:15,010 [INFO] Sent log to topic=logs partition=0 offset=526 payload={'timestamp': '2026-04-06T14:14:14.946607+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:44:16,067 [INFO] Sent log to topic=logs partition=0 offset=528 payload={'timestamp': '2026-04-06T14:14:16.011307+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:44:17,135 [INFO] Sent log to topic=logs partition=0 offset=530 payload={'timestamp': '2026-04-06T14:14:17.068717+00:00', 'level': 'WARN', 'message': 'Background job completed'}
+2026-04-06 19:44:18,199 [INFO] Sent log to topic=logs partition=0 offset=532 payload={'timestamp': '2026-04-06T14:14:18.136297+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:44:19,259 [INFO] Sent log to topic=logs partition=0 offset=534 payload={'timestamp': '2026-04-06T14:14:19.200392+00:00', 'level': 'WARN', 'message': 'Database connection latency detected'}
+2026-04-06 19:44:20,366 [INFO] Sent log to topic=logs partition=0 offset=536 payload={'timestamp': '2026-04-06T14:14:20.296282+00:00', 'level': 'INFO', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:44:21,425 [INFO] Sent log to topic=logs partition=0 offset=538 payload={'timestamp': '2026-04-06T14:14:21.368161+00:00', 'level': 'INFO', 'message': 'User session expired'}
+2026-04-06 19:44:22,481 [INFO] Sent log to topic=logs partition=0 offset=540 payload={'timestamp': '2026-04-06T14:14:22.426356+00:00', 'level': 'ERROR', 'message': 'User session expired'}
+2026-04-06 19:44:23,549 [INFO] Sent log to topic=logs partition=0 offset=542 payload={'timestamp': '2026-04-06T14:14:23.482121+00:00', 'level': 'INFO', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:44:24,620 [INFO] Sent log to topic=logs partition=0 offset=544 payload={'timestamp': '2026-04-06T14:14:24.549900+00:00', 'level': 'INFO', 'message': 'Background job completed'}
+2026-04-06 19:44:25,676 [INFO] Sent log to topic=logs partition=0 offset=546 payload={'timestamp': '2026-04-06T14:14:25.621672+00:00', 'level': 'WARN', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:44:26,732 [INFO] Sent log to topic=logs partition=0 offset=548 payload={'timestamp': '2026-04-06T14:14:26.677299+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:44:27,795 [INFO] Sent log to topic=logs partition=0 offset=550 payload={'timestamp': '2026-04-06T14:14:27.733665+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:44:28,863 [INFO] Sent log to topic=logs partition=0 offset=552 payload={'timestamp': '2026-04-06T14:14:28.796366+00:00', 'level': 'INFO', 'message': 'Payment request received'}
+2026-04-06 19:44:29,958 [INFO] Sent log to topic=logs partition=0 offset=554 payload={'timestamp': '2026-04-06T14:14:29.887967+00:00', 'level': 'ERROR', 'message': 'File upload completed'}
+2026-04-06 19:44:31,015 [INFO] Sent log to topic=logs partition=0 offset=556 payload={'timestamp': '2026-04-06T14:14:30.958993+00:00', 'level': 'WARN', 'message': 'Database connection latency detected'}
+2026-04-06 19:44:32,108 [INFO] Sent log to topic=logs partition=0 offset=558 payload={'timestamp': '2026-04-06T14:14:32.015253+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:44:33,168 [INFO] Sent log to topic=logs partition=0 offset=560 payload={'timestamp': '2026-04-06T14:14:33.109413+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:44:34,237 [INFO] Sent log to topic=logs partition=0 offset=562 payload={'timestamp': '2026-04-06T14:14:34.170875+00:00', 'level': 'INFO', 'message': 'Background job completed'}
+2026-04-06 19:44:35,307 [INFO] Sent log to topic=logs partition=0 offset=564 payload={'timestamp': '2026-04-06T14:14:35.238527+00:00', 'level': 'INFO', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:44:36,374 [INFO] Sent log to topic=logs partition=0 offset=566 payload={'timestamp': '2026-04-06T14:14:36.308659+00:00', 'level': 'ERROR', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:44:37,441 [INFO] Sent log to topic=logs partition=0 offset=568 payload={'timestamp': '2026-04-06T14:14:37.374936+00:00', 'level': 'ERROR', 'message': 'User session expired'}
+2026-04-06 19:44:38,499 [INFO] Sent log to topic=logs partition=0 offset=570 payload={'timestamp': '2026-04-06T14:14:38.442870+00:00', 'level': 'INFO', 'message': 'Background job completed'}
+2026-04-06 19:44:39,567 [INFO] Sent log to topic=logs partition=0 offset=572 payload={'timestamp': '2026-04-06T14:14:39.500896+00:00', 'level': 'INFO', 'message': 'Configuration file reloaded'}
+2026-04-06 19:44:40,625 [INFO] Sent log to topic=logs partition=0 offset=574 payload={'timestamp': '2026-04-06T14:14:40.568149+00:00', 'level': 'INFO', 'message': 'Invalid customer input received'}
+2026-04-06 19:44:41,684 [INFO] Sent log to topic=logs partition=0 offset=576 payload={'timestamp': '2026-04-06T14:14:41.626321+00:00', 'level': 'ERROR', 'message': 'Invalid customer input received'}
+2026-04-06 19:44:42,747 [INFO] Sent log to topic=logs partition=0 offset=578 payload={'timestamp': '2026-04-06T14:14:42.685162+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:44:43,815 [INFO] Sent log to topic=logs partition=0 offset=580 payload={'timestamp': '2026-04-06T14:14:43.748033+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:44:44,876 [INFO] Sent log to topic=logs partition=0 offset=582 payload={'timestamp': '2026-04-06T14:14:44.816495+00:00', 'level': 'INFO', 'message': 'Payment request received'}
+2026-04-06 19:44:45,943 [INFO] Sent log to topic=logs partition=0 offset=584 payload={'timestamp': '2026-04-06T14:14:45.877085+00:00', 'level': 'ERROR', 'message': 'User login successful'}
+2026-04-06 19:44:47,021 [INFO] Sent log to topic=logs partition=0 offset=586 payload={'timestamp': '2026-04-06T14:14:46.946053+00:00', 'level': 'INFO', 'message': 'Payment request received'}
+2026-04-06 19:44:48,091 [INFO] Sent log to topic=logs partition=0 offset=588 payload={'timestamp': '2026-04-06T14:14:48.022137+00:00', 'level': 'WARN', 'message': 'Payment request received'}
+2026-04-06 19:44:49,164 [INFO] Sent log to topic=logs partition=0 offset=590 payload={'timestamp': '2026-04-06T14:14:49.094881+00:00', 'level': 'WARN', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:44:50,226 [INFO] Sent log to topic=logs partition=0 offset=592 payload={'timestamp': '2026-04-06T14:14:50.165591+00:00', 'level': 'WARN', 'message': 'Payment request received'}
+2026-04-06 19:44:51,294 [INFO] Sent log to topic=logs partition=0 offset=594 payload={'timestamp': '2026-04-06T14:14:51.227374+00:00', 'level': 'ERROR', 'message': 'Payment request received'}
+2026-04-06 19:44:52,358 [INFO] Sent log to topic=logs partition=0 offset=596 payload={'timestamp': '2026-04-06T14:14:52.295440+00:00', 'level': 'WARN', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:44:53,422 [INFO] Sent log to topic=logs partition=0 offset=598 payload={'timestamp': '2026-04-06T14:14:53.359748+00:00', 'level': 'WARN', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:44:54,485 [INFO] Sent log to topic=logs partition=0 offset=600 payload={'timestamp': '2026-04-06T14:14:54.423678+00:00', 'level': 'ERROR', 'message': 'Background job completed'}
+2026-04-06 19:44:55,546 [INFO] Sent log to topic=logs partition=0 offset=602 payload={'timestamp': '2026-04-06T14:14:55.486291+00:00', 'level': 'WARN', 'message': 'Background job completed'}
+2026-04-06 19:44:56,617 [INFO] Sent log to topic=logs partition=0 offset=604 payload={'timestamp': '2026-04-06T14:14:56.547736+00:00', 'level': 'ERROR', 'message': 'Database connection latency detected'}
+2026-04-06 19:44:57,682 [INFO] Sent log to topic=logs partition=0 offset=606 payload={'timestamp': '2026-04-06T14:14:57.618479+00:00', 'level': 'INFO', 'message': 'Service dependency unavailable'}
+2026-04-06 19:44:58,745 [INFO] Sent log to topic=logs partition=0 offset=608 payload={'timestamp': '2026-04-06T14:14:58.682536+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:44:59,808 [INFO] Sent log to topic=logs partition=0 offset=610 payload={'timestamp': '2026-04-06T14:14:59.746175+00:00', 'level': 'INFO', 'message': 'Service dependency unavailable'}
+2026-04-06 19:45:00,872 [INFO] Sent log to topic=logs partition=0 offset=612 payload={'timestamp': '2026-04-06T14:15:00.809429+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:45:01,939 [INFO] Sent log to topic=logs partition=0 offset=614 payload={'timestamp': '2026-04-06T14:15:01.873381+00:00', 'level': 'ERROR', 'message': 'User login successful'}
+2026-04-06 19:45:03,003 [INFO] Sent log to topic=logs partition=0 offset=616 payload={'timestamp': '2026-04-06T14:15:02.940561+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:45:04,069 [INFO] Sent log to topic=logs partition=0 offset=618 payload={'timestamp': '2026-04-06T14:15:04.004638+00:00', 'level': 'INFO', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:45:05,136 [INFO] Sent log to topic=logs partition=0 offset=620 payload={'timestamp': '2026-04-06T14:15:05.070614+00:00', 'level': 'ERROR', 'message': 'File upload completed'}
+2026-04-06 19:45:07,162 [INFO] <BrokerConnection node_id=bootstrap-0 host=host.docker.internal:9092 <connecting> [IPv4 ('192.168.1.76', 9092)]>: connecting to host.docker.internal:9092 [('192.168.1.76', 902026-04-06 19:45:07,259 [INFO] Sent log to topic=logs partition=0 offset=624 payload={'timestamp': '2026-04-06T14:15:07.199380+00:00', 'level': 'WARN', 'message': 'Configuration file reloaded'}
+2026-04-06 19:45:08,323 [INFO] Sent log to topic=logs partition=0 offset=627 payload={'timestamp': '2026-04-06T14:15:08.260749+00:00', 'level': 'INFO', 'message': 'Background job completed'}
+2026-04-06 19:45:09,384 [INFO] Sent log to topic=logs partition=0 offset=630 payload={'timestamp': '2026-04-06T14:15:09.324236+00:00', 'level': 'WARN', 'message': 'Database connection latency detected'}
+2026-04-06 19:45:10,457 [INFO] Sent log to topic=logs partition=0 offset=633 payload={'timestamp': '2026-04-06T14:15:10.392820+00:00', 'level': 'INFO', 'message': 'Invalid customer input received'}
+2026-04-06 19:45:11,523 [INFO] Sent log to topic=logs partition=0 offset=636 payload={'timestamp': '2026-04-06T14:15:11.459168+00:00', 'level': 'INFO', 'message': 'Configuration file reloaded'}
+2026-04-06 19:45:12,585 [INFO] Sent log to topic=logs partition=0 offset=639 payload={'timestamp': '2026-04-06T14:15:12.524222+00:00', 'level': 'INFO', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:45:13,657 [INFO] Sent log to topic=logs partition=0 offset=642 payload={'timestamp': '2026-04-06T14:15:13.591693+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:45:14,715 [INFO] Sent log to topic=logs partition=0 offset=645 payload={'timestamp': '2026-04-06T14:15:14.658301+00:00', 'level': 'INFO', 'message': 'Payment request received'}
+2026-04-06 19:45:15,778 [INFO] Sent log to topic=logs partition=0 offset=648 payload={'timestamp': '2026-04-06T14:15:15.716434+00:00', 'level': 'INFO', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:45:16,848 [INFO] Sent log to topic=logs partition=0 offset=651 payload={'timestamp': '2026-04-06T14:15:16.780941+00:00', 'level': 'INFO', 'message': 'Invalid customer input received'}
+2026-04-06 19:45:17,942 [INFO] Sent log to topic=logs partition=0 offset=654 payload={'timestamp': '2026-04-06T14:15:17.865603+00:00', 'level': 'ERROR', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:45:19,020 [INFO] Sent log to topic=logs partition=0 offset=656 payload={'timestamp': '2026-04-06T14:15:18.943476+00:00', 'level': 'INFO', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:45:20,090 [INFO] Sent log to topic=logs partition=0 offset=658 payload={'timestamp': '2026-04-06T14:15:20.021050+00:00', 'level': 'ERROR', 'message': 'User login successful'}
+2026-04-06 19:45:21,200 [INFO] Sent log to topic=logs partition=0 offset=660 payload={'timestamp': '2026-04-06T14:15:21.096291+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:45:22,273 [INFO] Sent log to topic=logs partition=0 offset=662 payload={'timestamp': '2026-04-06T14:15:22.201473+00:00', 'level': 'INFO', 'message': 'Background job completed'}
+2026-04-06 19:45:23,345 [INFO] Sent log to topic=logs partition=0 offset=664 payload={'timestamp': '2026-04-06T14:15:23.273876+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:45:24,403 [INFO] Sent log to topic=logs partition=0 offset=666 payload={'timestamp': '2026-04-06T14:15:24.346293+00:00', 'level': 'INFO', 'message': 'User session expired'}
+2026-04-06 19:45:25,469 [INFO] Sent log to topic=logs partition=0 offset=668 payload={'timestamp': '2026-04-06T14:15:25.404627+00:00', 'level': 'ERROR', 'message': 'User login successful'}
+2026-04-06 19:45:26,607 [INFO] Sent log to topic=logs partition=0 offset=670 payload={'timestamp': '2026-04-06T14:15:26.479882+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:45:27,681 [INFO] Sent log to topic=logs partition=0 offset=672 payload={'timestamp': '2026-04-06T14:15:27.608852+00:00', 'level': 'ERROR', 'message': 'File upload completed'}
+2026-04-06 19:45:28,745 [INFO] Sent log to topic=logs partition=0 offset=674 payload={'timestamp': '2026-04-06T14:15:28.682588+00:00', 'level': 'INFO', 'message': 'Payment request received'}
+2026-04-06 19:45:29,814 [INFO] Sent log to topic=logs partition=0 offset=676 payload={'timestamp': '2026-04-06T14:15:29.746361+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:45:30,884 [INFO] Sent log to topic=logs partition=0 offset=678 payload={'timestamp': '2026-04-06T14:15:30.816471+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:45:31,959 [INFO] Sent log to topic=logs partition=0 offset=680 payload={'timestamp': '2026-04-06T14:15:31.887168+00:00', 'level': 'INFO', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:45:33,031 [INFO] Sent log to topic=logs partition=0 offset=682 payload={'timestamp': '2026-04-06T14:15:32.960867+00:00', 'level': 'INFO', 'message': 'Payment request received'}
+2026-04-06 19:45:34,088 [INFO] Sent log to topic=logs partition=0 offset=684 payload={'timestamp': '2026-04-06T14:15:34.031981+00:00', 'level': 'WARN', 'message': 'Configuration file reloaded'}
+2026-04-06 19:45:35,161 [INFO] Sent log to topic=logs partition=0 offset=686 payload={'timestamp': '2026-04-06T14:15:35.090200+00:00', 'level': 'ERROR', 'message': 'Background job completed'}
+2026-04-06 19:45:36,237 [INFO] Sent log to topic=logs partition=0 offset=688 payload={'timestamp': '2026-04-06T14:15:36.161781+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:45:37,297 [INFO] Sent log to topic=logs partition=0 offset=690 payload={'timestamp': '2026-04-06T14:15:37.238013+00:00', 'level': 'WARN', 'message': 'File upload completed'}
+2026-04-06 19:45:38,356 [INFO] Sent log to topic=logs partition=0 offset=692 payload={'timestamp': '2026-04-06T14:15:38.298367+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:45:39,418 [INFO] Sent log to topic=logs partition=0 offset=694 payload={'timestamp': '2026-04-06T14:15:39.356804+00:00', 'level': 'INFO', 'message': 'User login successful'}
+2026-04-06 19:45:40,487 [INFO] Sent log to topic=logs partition=0 offset=696 payload={'timestamp': '2026-04-06T14:15:40.419523+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:45:41,555 [INFO] Sent log to topic=logs partition=0 offset=698 payload={'timestamp': '2026-04-06T14:15:41.488572+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:45:42,616 [INFO] Sent log to topic=logs partition=0 offset=700 payload={'timestamp': '2026-04-06T14:15:42.556144+00:00', 'level': 'INFO', 'message': 'User login successful'}
+2026-04-06 19:45:43,680 [INFO] Sent log to topic=logs partition=0 offset=702 payload={'timestamp': '2026-04-06T14:15:43.617132+00:00', 'level': 'ERROR', 'message': 'Background job completed'}
+2026-04-06 19:45:44,743 [INFO] Sent log to topic=logs partition=0 offset=704 payload={'timestamp': '2026-04-06T14:15:44.680889+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:45:45,804 [INFO] Sent log to topic=logs partition=0 offset=706 payload={'timestamp': '2026-04-06T14:15:45.744237+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:45:46,866 [INFO] Sent log to topic=logs partition=0 offset=708 payload={'timestamp': '2026-04-06T14:15:46.806111+00:00', 'level': 'ERROR', 'message': 'Invalid customer input received'}
+2026-04-06 19:45:47,931 [INFO] Sent log to topic=logs partition=0 offset=710 payload={'timestamp': '2026-04-06T14:15:47.868001+00:00', 'level': 'INFO', 'message': 'User login successful'}
+2026-04-06 19:45:48,994 [INFO] Sent log to topic=logs partition=0 offset=712 payload={'timestamp': '2026-04-06T14:15:48.932117+00:00', 'level': 'WARN', 'message': 'Payment request received'}
+2026-04-06 19:45:50,059 [INFO] Sent log to topic=logs partition=0 offset=714 payload={'timestamp': '2026-04-06T14:15:49.994795+00:00', 'level': 'INFO', 'message': 'Configuration file reloaded'}
+2026-04-06 19:45:51,124 [INFO] Sent log to topic=logs partition=0 offset=716 payload={'timestamp': '2026-04-06T14:15:51.060574+00:00', 'level': 'INFO', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:45:52,190 [INFO] Sent log to topic=logs partition=0 offset=718 payload={'timestamp': '2026-04-06T14:15:52.125234+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:45:53,253 [INFO] Sent log to topic=logs partition=0 offset=720 payload={'timestamp': '2026-04-06T14:15:53.191553+00:00', 'level': 'WARN', 'message': 'File upload completed'}
+2026-04-06 19:45:54,317 [INFO] Sent log to topic=logs partition=0 offset=722 payload={'timestamp': '2026-04-06T14:15:54.254031+00:00', 'level': 'INFO', 'message': 'Payment request received'}
+2026-04-06 19:45:55,386 [INFO] Sent log to topic=logs partition=0 offset=724 payload={'timestamp': '2026-04-06T14:15:55.318252+00:00', 'level': 'WARN', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:45:56,453 [INFO] Sent log to topic=logs partition=0 offset=726 payload={'timestamp': '2026-04-06T14:15:56.387307+00:00', 'level': 'INFO', 'message': 'Database connection latency detected'}
+2026-04-06 19:45:57,519 [INFO] Sent log to topic=logs partition=0 offset=728 payload={'timestamp': '2026-04-06T14:15:57.453922+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:45:58,576 [INFO] Sent log to topic=logs partition=0 offset=730 payload={'timestamp': '2026-04-06T14:15:58.520572+00:00', 'level': 'INFO', 'message': 'User session expired'}
+2026-04-06 19:45:59,641 [INFO] Sent log to topic=logs partition=0 offset=732 payload={'timestamp': '2026-04-06T14:15:59.577226+00:00', 'level': 'ERROR', 'message': 'Database connection latency detected'}
+2026-04-06 19:46:00,701 [INFO] Sent log to topic=logs partition=0 offset=734 payload={'timestamp': '2026-04-06T14:16:00.642135+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:46:01,765 [INFO] Sent log to topic=logs partition=0 offset=736 payload={'timestamp': '2026-04-06T14:16:01.701855+00:00', 'level': 'INFO', 'message': 'User login successful'}
+2026-04-06 19:46:02,825 [INFO] Sent log to topic=logs partition=0 offset=738 payload={'timestamp': '2026-04-06T14:16:02.765819+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:46:03,890 [INFO] Sent log to topic=logs partition=0 offset=740 payload={'timestamp': '2026-04-06T14:16:03.826242+00:00', 'level': 'INFO', 'message': 'Configuration file reloaded'}
+2026-04-06 19:46:04,955 [INFO] Sent log to topic=logs partition=0 offset=742 payload={'timestamp': '2026-04-06T14:16:04.891465+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:46:06,022 [INFO] Sent log to topic=logs partition=0 offset=744 payload={'timestamp': '2026-04-06T14:16:05.956341+00:00', 'level': 'ERROR', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:46:07,084 [INFO] Sent log to topic=logs partition=0 offset=746 payload={'timestamp': '2026-04-06T14:16:07.023170+00:00', 'level': 'INFO', 'message': 'User login successful'}
+2026-04-06 19:46:08,145 [INFO] Sent log to topic=logs partition=0 offset=748 payload={'timestamp': '2026-04-06T14:16:08.084752+00:00', 'level': 'WARN', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:46:09,205 [INFO] Sent log to topic=logs partition=0 offset=750 payload={'timestamp': '2026-04-06T14:16:09.146323+00:00', 'level': 'INFO', 'message': 'Background job completed'}
+2026-04-06 19:46:10,272 [INFO] Sent log to topic=logs partition=0 offset=752 payload={'timestamp': '2026-04-06T14:16:10.206843+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:46:11,335 [INFO] Sent log to topic=logs partition=0 offset=754 payload={'timestamp': '2026-04-06T14:16:11.275868+00:00', 'level': 'WARN', 'message': 'Payment request received'}
+2026-04-06 19:46:12,396 [INFO] Sent log to topic=logs partition=0 offset=756 payload={'timestamp': '2026-04-06T14:16:12.335912+00:00', 'level': 'INFO', 'message': 'Database connection latency detected'}
+2026-04-06 19:46:13,463 [INFO] Sent log to topic=logs partition=0 offset=758 payload={'timestamp': '2026-04-06T14:16:13.397665+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:46:14,534 [INFO] Sent log to topic=logs partition=0 offset=760 payload={'timestamp': '2026-04-06T14:16:14.464243+00:00', 'level': 'WARN', 'message': 'File upload completed'}
+2026-04-06 19:46:15,602 [INFO] Sent log to topic=logs partition=0 offset=762 payload={'timestamp': '2026-04-06T14:16:15.535166+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:46:16,667 [INFO] Sent log to topic=logs partition=0 offset=764 payload={'timestamp': '2026-04-06T14:16:16.604728+00:00', 'level': 'INFO', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:46:17,729 [INFO] Sent log to topic=logs partition=0 offset=766 payload={'timestamp': '2026-04-06T14:16:17.668164+00:00', 'level': 'ERROR', 'message': 'Database connection latency detected'}
+2026-04-06 19:46:18,787 [INFO] Sent log to topic=logs partition=0 offset=768 payload={'timestamp': '2026-04-06T14:16:18.730211+00:00', 'level': 'INFO', 'message': 'Configuration file reloaded'}
+2026-04-06 19:46:19,857 [INFO] Sent log to topic=logs partition=0 offset=770 payload={'timestamp': '2026-04-06T14:16:19.788031+00:00', 'level': 'WARN', 'message': 'Database connection latency detected'}
+2026-04-06 19:46:20,918 [INFO] Sent log to topic=logs partition=0 offset=772 payload={'timestamp': '2026-04-06T14:16:20.858639+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:46:21,979 [INFO] Sent log to topic=logs partition=0 offset=774 payload={'timestamp': '2026-04-06T14:16:21.919624+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:46:23,045 [INFO] Sent log to topic=logs partition=0 offset=776 payload={'timestamp': '2026-04-06T14:16:22.981013+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:46:24,107 [INFO] Sent log to topic=logs partition=0 offset=778 payload={'timestamp': '2026-04-06T14:16:24.045999+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:46:25,168 [INFO] Sent log to topic=logs partition=0 offset=780 payload={'timestamp': '2026-04-06T14:16:25.107882+00:00', 'level': 'WARN', 'message': 'Background job completed'}
+2026-04-06 19:46:26,228 [INFO] Sent log to topic=logs partition=0 offset=782 payload={'timestamp': '2026-04-06T14:16:26.168594+00:00', 'level': 'ERROR', 'message': 'Background job completed'}
+2026-04-06 19:46:27,292 [INFO] Sent log to topic=logs partition=0 offset=784 payload={'timestamp': '2026-04-06T14:16:27.229380+00:00', 'level': 'INFO', 'message': 'Configuration file reloaded'}
+2026-04-06 19:46:28,352 [INFO] Sent log to topic=logs partition=0 offset=786 payload={'timestamp': '2026-04-06T14:16:28.293453+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:46:29,420 [INFO] Sent log to topic=logs partition=0 offset=788 payload={'timestamp': '2026-04-06T14:16:29.353158+00:00', 'level': 'ERROR', 'message': 'File upload completed'}
+2026-04-06 19:46:30,486 [INFO] Sent log to topic=logs partition=0 offset=790 payload={'timestamp': '2026-04-06T14:16:30.421416+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:46:31,550 [INFO] Sent log to topic=logs partition=0 offset=792 payload={'timestamp': '2026-04-06T14:16:31.486802+00:00', 'level': 'ERROR', 'message': 'User login successful'}
+2026-04-06 19:46:32,616 [INFO] Sent log to topic=logs partition=0 offset=794 payload={'timestamp': '2026-04-06T14:16:32.550988+00:00', 'level': 'ERROR', 'message': 'User login successful'}
+2026-04-06 19:46:33,677 [INFO] Sent log to topic=logs partition=0 offset=796 payload={'timestamp': '2026-04-06T14:16:33.616918+00:00', 'level': 'ERROR', 'message': 'Payment request received'}
+2026-04-06 19:46:34,739 [INFO] Sent log to topic=logs partition=0 offset=798 payload={'timestamp': '2026-04-06T14:16:34.678284+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:46:35,799 [INFO] Sent log to topic=logs partition=0 offset=800 payload={'timestamp': '2026-04-06T14:16:35.740305+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:46:36,866 [INFO] Sent log to topic=logs partition=0 offset=802 payload={'timestamp': '2026-04-06T14:16:36.800140+00:00', 'level': 'INFO', 'message': 'Invalid customer input received'}
+2026-04-06 19:46:37,951 [INFO] Sent log to topic=logs partition=0 offset=804 payload={'timestamp': '2026-04-06T14:16:37.866666+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:46:39,021 [INFO] Sent log to topic=logs partition=0 offset=806 payload={'timestamp': '2026-04-06T14:16:38.952178+00:00', 'level': 'INFO', 'message': 'Background job completed'}
+2026-04-06 19:46:40,084 [INFO] Sent log to topic=logs partition=0 offset=808 payload={'timestamp': '2026-04-06T14:16:40.021947+00:00', 'level': 'WARN', 'message': 'Database connection latency detected'}
+2026-04-06 19:46:41,145 [INFO] Sent log to topic=logs partition=0 offset=810 payload={'timestamp': '2026-04-06T14:16:41.085001+00:00', 'level': 'ERROR', 'message': 'User session expired'}
+2026-04-06 19:46:42,206 [INFO] Sent log to topic=logs partition=0 offset=812 payload={'timestamp': '2026-04-06T14:16:42.146432+00:00', 'level': 'WARN', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:46:43,267 [INFO] Sent log to topic=logs partition=0 offset=814 payload={'timestamp': '2026-04-06T14:16:43.206545+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:46:44,362 [INFO] Sent log to topic=logs partition=0 offset=816 payload={'timestamp': '2026-04-06T14:16:44.278405+00:00', 'level': 'INFO', 'message': 'User session expired'}
+2026-04-06 19:46:45,427 [INFO] Sent log to topic=logs partition=0 offset=818 payload={'timestamp': '2026-04-06T14:16:45.363104+00:00', 'level': 'WARN', 'message': 'Database connection latency detected'}
+2026-04-06 19:46:46,488 [INFO] Sent log to topic=logs partition=0 offset=820 payload={'timestamp': '2026-04-06T14:16:46.428624+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:46:47,549 [INFO] Sent log to topic=logs partition=0 offset=822 payload={'timestamp': '2026-04-06T14:16:47.490150+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:46:48,619 [INFO] Sent log to topic=logs partition=0 offset=824 payload={'timestamp': '2026-04-06T14:16:48.550025+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:46:49,681 [INFO] Sent log to topic=logs partition=0 offset=826 payload={'timestamp': '2026-04-06T14:16:49.619992+00:00', 'level': 'INFO', 'message': 'Configuration file reloaded'}
+2026-04-06 19:46:50,737 [INFO] Sent log to topic=logs partition=0 offset=828 payload={'timestamp': '2026-04-06T14:16:50.682222+00:00', 'level': 'WARN', 'message': 'Payment request received'}
+2026-04-06 19:46:51,798 [INFO] Sent log to topic=logs partition=0 offset=830 payload={'timestamp': '2026-04-06T14:16:51.738693+00:00', 'level': 'WARN', 'message': 'Configuration file reloaded'}
+2026-04-06 19:46:52,862 [INFO] Sent log to topic=logs partition=0 offset=832 payload={'timestamp': '2026-04-06T14:16:52.799626+00:00', 'level': 'WARN', 'message': 'Database connection latency detected'}
+2026-04-06 19:46:53,925 [INFO] Sent log to topic=logs partition=0 offset=834 payload={'timestamp': '2026-04-06T14:16:53.863200+00:00', 'level': 'INFO', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:46:54,984 [INFO] Sent log to topic=logs partition=0 offset=836 payload={'timestamp': '2026-04-06T14:16:54.926310+00:00', 'level': 'ERROR', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:46:56,047 [INFO] Sent log to topic=logs partition=0 offset=838 payload={'timestamp': '2026-04-06T14:16:55.985075+00:00', 'level': 'ERROR', 'message': 'File upload completed'}
+2026-04-06 19:46:57,115 [INFO] Sent log to topic=logs partition=0 offset=840 payload={'timestamp': '2026-04-06T14:16:57.049019+00:00', 'level': 'ERROR', 'message': 'File upload completed'}
+2026-04-06 19:46:58,184 [INFO] Sent log to topic=logs partition=0 offset=842 payload={'timestamp': '2026-04-06T14:16:58.116493+00:00', 'level': 'ERROR', 'message': 'Payment request received'}
+2026-04-06 19:46:59,243 [INFO] Sent log to topic=logs partition=0 offset=844 payload={'timestamp': '2026-04-06T14:16:59.184759+00:00', 'level': 'INFO', 'message': 'Configuration file reloaded'}
+2026-04-06 19:47:00,311 [INFO] Sent log to topic=logs partition=0 offset=846 payload={'timestamp': '2026-04-06T14:17:00.243717+00:00', 'level': 'INFO', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:47:01,376 [INFO] Sent log to topic=logs partition=0 offset=848 payload={'timestamp': '2026-04-06T14:17:01.312624+00:00', 'level': 'ERROR', 'message': 'Invalid customer input received'}
+2026-04-06 19:47:02,443 [INFO] Sent log to topic=logs partition=0 offset=850 payload={'timestamp': '2026-04-06T14:17:02.377246+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:47:03,513 [INFO] Sent log to topic=logs partition=0 offset=852 payload={'timestamp': '2026-04-06T14:17:03.444107+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:47:04,578 [INFO] Sent log to topic=logs partition=0 offset=854 payload={'timestamp': '2026-04-06T14:17:04.514048+00:00', 'level': 'ERROR', 'message': 'Background job completed'}
+2026-04-06 19:47:05,642 [INFO] Sent log to topic=logs partition=0 offset=856 payload={'timestamp': '2026-04-06T14:17:05.579514+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:47:08,054 [INFO] <BrokerConnection node_id=bootstrap-0 host=host.docker.internal:9092 <connecting> [IPv4 ('192.168.1.76', 9092)]>: connecting to host.docker.internal:9092 [('192.168.1.76', 9092) IPv4]
+2026-04-06 19:47:08,056 [INFO] Probing node bootstrap-0 broker version
+2026-04-06 19:47:08,057 [INFO] <BrokerConnection node_id=bootstrap-0 host=host.docker.internal:9092 <conne2026-04-06 19:47:08,836 [INFO] Sent log to topic=logs partition=0 offset=863 payload={'timestamp': '2026-04-06T14:17:08.775905+00:00', 'level': 'ERROR', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:47:09,901 [INFO] Sent log to topic=logs partition=0 offset=866 payload={'timestamp': '2026-04-06T14:17:09.837715+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:47:10,965 [INFO] Sent log to topic=logs partition=0 offset=869 payload={'timestamp': '2026-04-06T14:17:10.902646+00:00', 'level': 'ERROR', 'message': 'File upload completed'}
+2026-04-06 19:47:12,028 [INFO] Sent log to topic=logs partition=0 offset=872 payload={'timestamp': '2026-04-06T14:17:11.967760+00:00', 'level': 'WARN', 'message': 'Database connection latency detected'}
+2026-04-06 19:47:13,094 [INFO] Sent log to topic=logs partition=0 offset=875 payload={'timestamp': '2026-04-06T14:17:13.029080+00:00', 'level': 'INFO', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:47:14,167 [INFO] Sent log to topic=logs partition=0 offset=878 payload={'timestamp': '2026-04-06T14:17:14.096479+00:00', 'level': 'WARN', 'message': 'User session expired'}
+2026-04-06 19:47:15,230 [INFO] Sent log to topic=logs partition=0 offset=881 payload={'timestamp': '2026-04-06T14:17:15.168855+00:00', 'level': 'WARN', 'message': 'File upload completed'}
+2026-04-06 19:47:16,295 [INFO] Sent log to topic=logs partition=0 offset=884 payload={'timestamp': '2026-04-06T14:17:16.230760+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:47:17,363 [INFO] Sent log to topic=logs partition=0 offset=887 payload={'timestamp': '2026-04-06T14:17:17.296311+00:00', 'level': 'ERROR', 'message': 'Invalid customer input received'}
+2026-04-06 19:47:18,424 [INFO] Sent log to topic=logs partition=0 offset=890 payload={'timestamp': '2026-04-06T14:17:18.364244+00:00', 'level': 'ERROR', 'message': 'Payment request received'}
+2026-04-06 19:47:19,485 [INFO] Sent log to topic=logs partition=0 offset=893 payload={'timestamp': '2026-04-06T14:17:19.424913+00:00', 'level': 'WARN', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:47:20,541 [INFO] Sent log to topic=logs partition=0 offset=896 payload={'timestamp': '2026-04-06T14:17:20.485363+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:47:21,611 [INFO] Sent log to topic=logs partition=0 offset=899 payload={'timestamp': '2026-04-06T14:17:21.542676+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:47:22,735 [INFO] Sent log to topic=logs partition=0 offset=902 payload={'timestamp': '2026-04-06T14:17:22.611828+00:00', 'level': 'INFO', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:47:23,792 [INFO] Sent log to topic=logs partition=0 offset=905 payload={'timestamp': '2026-04-06T14:17:23.735634+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:47:24,854 [INFO] Sent log to topic=logs partition=0 offset=908 payload={'timestamp': '2026-04-06T14:17:24.794935+00:00', 'level': 'WARN', 'message': 'File upload completed'}
+2026-04-06 19:47:25,916 [INFO] Sent log to topic=logs partition=0 offset=911 payload={'timestamp': '2026-04-06T14:17:25.855694+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:47:26,973 [INFO] Sent log to topic=logs partition=0 offset=914 payload={'timestamp': '2026-04-06T14:17:26.917431+00:00', 'level': 'INFO', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:47:28,039 [INFO] Sent log to topic=logs partition=0 offset=917 payload={'timestamp': '2026-04-06T14:17:27.974423+00:00', 'level': 'INFO', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:47:29,099 [INFO] Sent log to topic=logs partition=0 offset=920 payload={'timestamp': '2026-04-06T14:17:29.040112+00:00', 'level': 'INFO', 'message': 'Invalid customer input received'}
+2026-04-06 19:47:30,165 [INFO] Sent log to topic=logs partition=0 offset=923 payload={'timestamp': '2026-04-06T14:17:30.100272+00:00', 'level': 'ERROR', 'message': 'File upload completed'}
+2026-04-06 19:47:31,229 [INFO] Sent log to topic=logs partition=0 offset=926 payload={'timestamp': '2026-04-06T14:17:31.167988+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:47:32,294 [INFO] Sent log to topic=logs partition=0 offset=929 payload={'timestamp': '2026-04-06T14:17:32.229871+00:00', 'level': 'ERROR', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:47:33,362 [INFO] Sent log to topic=logs partition=0 offset=932 payload={'timestamp': '2026-04-06T14:17:33.294602+00:00', 'level': 'WARN', 'message': 'Payment request received'}
+2026-04-06 19:47:34,437 [INFO] Sent log to topic=logs partition=0 offset=935 payload={'timestamp': '2026-04-06T14:17:34.363663+00:00', 'level': 'ERROR', 'message': 'Database connection latency detected'}
+2026-04-06 19:47:35,493 [INFO] Sent log to topic=logs partition=0 offset=938 payload={'timestamp': '2026-04-06T14:17:35.438397+00:00', 'level': 'INFO', 'message': 'Invalid customer input received'}
+2026-04-06 19:47:36,559 [INFO] Sent log to topic=logs partition=0 offset=941 payload={'timestamp': '2026-04-06T14:17:36.494672+00:00', 'level': 'WARN', 'message': 'User session expired'}
+2026-04-06 19:47:37,684 [INFO] Sent log to topic=logs partition=0 offset=944 payload={'timestamp': '2026-04-06T14:17:37.560441+00:00', 'level': 'WARN', 'message': 'Configuration file reloaded'}
+2026-04-06 19:47:38,743 [INFO] Sent log to topic=logs partition=0 offset=947 payload={'timestamp': '2026-04-06T14:17:38.687303+00:00', 'level': 'ERROR', 'message': 'User session expired'}
+2026-04-06 19:47:39,806 [INFO] Sent log to topic=logs partition=0 offset=950 payload={'timestamp': '2026-04-06T14:17:39.744067+00:00', 'level': 'WARN', 'message': 'Payment request received'}
+2026-04-06 19:47:40,868 [INFO] Sent log to topic=logs partition=0 offset=953 payload={'timestamp': '2026-04-06T14:17:40.807077+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:47:41,931 [INFO] Sent log to topic=logs partition=0 offset=956 payload={'timestamp': '2026-04-06T14:17:41.873463+00:00', 'level': 'INFO', 'message': 'Payment request received'}
+2026-04-06 19:47:42,989 [INFO] Sent log to topic=logs partition=0 offset=959 payload={'timestamp': '2026-04-06T14:17:42.932569+00:00', 'level': 'ERROR', 'message': 'User login successful'}
+2026-04-06 19:47:44,054 [INFO] Sent log to topic=logs partition=0 offset=962 payload={'timestamp': '2026-04-06T14:17:43.990061+00:00', 'level': 'INFO', 'message': 'User session expired'}
+2026-04-06 19:47:45,116 [INFO] Sent log to topic=logs partition=0 offset=965 payload={'timestamp': '2026-04-06T14:17:45.055435+00:00', 'level': 'INFO', 'message': 'User session expired'}
+2026-04-06 19:47:46,183 [INFO] Sent log to topic=logs partition=0 offset=968 payload={'timestamp': '2026-04-06T14:17:46.116915+00:00', 'level': 'ERROR', 'message': 'Invalid customer input received'}
+2026-04-06 19:47:47,250 [INFO] Sent log to topic=logs partition=0 offset=971 payload={'timestamp': '2026-04-06T14:17:47.184080+00:00', 'level': 'WARN', 'message': 'Background job completed'}
+2026-04-06 19:47:48,310 [INFO] Sent log to topic=logs partition=0 offset=974 payload={'timestamp': '2026-04-06T14:17:48.252085+00:00', 'level': 'INFO', 'message': 'Database connection latency detected'}
+2026-04-06 19:47:49,379 [INFO] Sent log to topic=logs partition=0 offset=977 payload={'timestamp': '2026-04-06T14:17:49.311158+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:47:50,437 [INFO] Sent log to topic=logs partition=0 offset=980 payload={'timestamp': '2026-04-06T14:17:50.380536+00:00', 'level': 'INFO', 'message': 'User login successful'}
+2026-04-06 19:47:51,523 [INFO] Sent log to topic=logs partition=0 offset=983 payload={'timestamp': '2026-04-06T14:17:51.438520+00:00', 'level': 'WARN', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:47:52,606 [INFO] Sent log to topic=logs partition=0 offset=986 payload={'timestamp': '2026-04-06T14:17:52.537840+00:00', 'level': 'WARN', 'message': 'File upload completed'}
+2026-04-06 19:47:53,671 [INFO] Sent log to topic=logs partition=0 offset=989 payload={'timestamp': '2026-04-06T14:17:53.607681+00:00', 'level': 'INFO', 'message': 'Database connection latency detected'}
+2026-04-06 19:47:54,736 [INFO] Sent log to topic=logs partition=0 offset=992 payload={'timestamp': '2026-04-06T14:17:54.672439+00:00', 'level': 'INFO', 'message': 'Invalid customer input received'}
+2026-04-06 19:47:55,804 [INFO] Sent log to topic=logs partition=0 offset=995 payload={'timestamp': '2026-04-06T14:17:55.737159+00:00', 'level': 'ERROR', 'message': 'User session expired'}
+2026-04-06 19:47:56,863 [INFO] Sent log to topic=logs partition=0 offset=998 payload={'timestamp': '2026-04-06T14:17:56.805208+00:00', 'level': 'WARN', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:47:57,924 [INFO] Sent log to topic=logs partition=0 offset=1001 payload={'timestamp': '2026-04-06T14:17:57.864241+00:00', 'level': 'WARN', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:47:58,980 [INFO] Sent log to topic=logs partition=0 offset=1004 payload={'timestamp': '2026-04-06T14:17:58.925323+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:48:00,036 [INFO] Sent log to topic=logs partition=0 offset=1007 payload={'timestamp': '2026-04-06T14:17:59.981404+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:48:01,103 [INFO] Sent log to topic=logs partition=0 offset=1010 payload={'timestamp': '2026-04-06T14:18:01.037818+00:00', 'level': 'INFO', 'message': 'User login successful'}
+2026-04-06 19:48:02,209 [INFO] Sent log to topic=logs partition=0 offset=1013 payload={'timestamp': '2026-04-06T14:18:02.137146+00:00', 'level': 'ERROR', 'message': 'Invalid customer input received'}
+2026-04-06 19:48:03,278 [INFO] Sent log to topic=logs partition=0 offset=1016 payload={'timestamp': '2026-04-06T14:18:03.210701+00:00', 'level': 'WARN', 'message': 'Background job completed'}
+2026-04-06 19:48:04,343 [INFO] Sent log to topic=logs partition=0 offset=1019 payload={'timestamp': '2026-04-06T14:18:04.278700+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:48:05,410 [INFO] Sent log to topic=logs partition=0 offset=1022 payload={'timestamp': '2026-04-06T14:18:05.344621+00:00', 'level': 'WARN', 'message': 'Payment request received'}
+2026-04-06 19:48:06,475 [INFO] Sent log to topic=logs partition=0 offset=1025 payload={'timestamp': '2026-04-06T14:18:06.411336+00:00', 'level': 'INFO', 'message': 'File upload completed'}
+2026-04-06 19:48:07,544 [INFO] Sent log to topic=logs partition=0 offset=1028 payload={'timestamp': '2026-04-06T14:18:07.476066+00:00', 'level': 'WARN', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:48:08,603 [INFO] Sent log to topic=logs partition=0 offset=1031 payload={'timestamp': '2026-04-06T14:18:08.545381+00:00', 'level': 'INFO', 'message': 'Invalid customer input received'}
+2026-04-06 19:48:09,672 [INFO] Sent log to topic=logs partition=0 offset=1034 payload={'timestamp': '2026-04-06T14:18:09.605250+00:00', 'level': 'ERROR', 'message': 'Background job completed'}
+2026-04-06 19:48:10,738 [INFO] Sent log to topic=logs partition=0 offset=1037 payload={'timestamp': '2026-04-06T14:18:10.673261+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:48:11,796 [INFO] Sent log to topic=logs partition=0 offset=1040 payload={'timestamp': '2026-04-06T14:18:11.739438+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:48:12,861 [INFO] Sent log to topic=logs partition=0 offset=1043 payload={'timestamp': '2026-04-06T14:18:12.796498+00:00', 'level': 'WARN', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:48:13,930 [INFO] Sent log to topic=logs partition=0 offset=1046 payload={'timestamp': '2026-04-06T14:18:13.862744+00:00', 'level': 'INFO', 'message': 'User login successful'}
+2026-04-06 19:48:14,990 [INFO] Sent log to topic=logs partition=0 offset=1049 payload={'timestamp': '2026-04-06T14:18:14.931176+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:48:16,058 [INFO] Sent log to topic=logs partition=0 offset=1052 payload={'timestamp': '2026-04-06T14:18:15.991339+00:00', 'level': 'ERROR', 'message': 'Database connection latency detected'}
+2026-04-06 19:48:17,135 [INFO] Sent log to topic=logs partition=0 offset=1055 payload={'timestamp': '2026-04-06T14:18:17.058918+00:00', 'level': 'ERROR', 'message': 'Database connection latency detected'}
+2026-04-06 19:48:18,202 [INFO] Sent log to topic=logs partition=0 offset=1058 payload={'timestamp': '2026-04-06T14:18:18.135807+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:48:19,275 [INFO] Sent log to topic=logs partition=0 offset=1061 payload={'timestamp': '2026-04-06T14:18:19.202924+00:00', 'level': 'ERROR', 'message': 'Database connection latency detected'}
+2026-04-06 19:48:20,361 [INFO] Sent log to topic=logs partition=0 offset=1064 payload={'timestamp': '2026-04-06T14:18:20.280636+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:48:21,452 [INFO] Sent log to topic=logs partition=0 offset=1067 payload={'timestamp': '2026-04-06T14:18:21.381221+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:48:22,524 [INFO] Sent log to topic=logs partition=0 offset=1070 payload={'timestamp': '2026-04-06T14:18:22.454705+00:00', 'level': 'WARN', 'message': 'Background job completed'}
+2026-04-06 19:48:23,587 [INFO] Sent log to topic=logs partition=0 offset=1073 payload={'timestamp': '2026-04-06T14:18:23.525468+00:00', 'level': 'WARN', 'message': 'User session expired'}
+2026-04-06 19:48:24,655 [INFO] Sent log to topic=logs partition=0 offset=1076 payload={'timestamp': '2026-04-06T14:18:24.588314+00:00', 'level': 'ERROR', 'message': 'User session expired'}
+2026-04-06 19:48:25,713 [INFO] Sent log to topic=logs partition=0 offset=1079 payload={'timestamp': '2026-04-06T14:18:25.655410+00:00', 'level': 'ERROR', 'message': 'Database connection latency detected'}
+2026-04-06 19:48:26,782 [INFO] Sent log to topic=logs partition=0 offset=1082 payload={'timestamp': '2026-04-06T14:18:26.713597+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:48:27,843 [INFO] Sent log to topic=logs partition=0 offset=1085 payload={'timestamp': '2026-04-06T14:18:27.783174+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:48:28,908 [INFO] Sent log to topic=logs partition=0 offset=1088 payload={'timestamp': '2026-04-06T14:18:28.844102+00:00', 'level': 'INFO', 'message': 'Configuration file reloaded'}
+2026-04-06 19:48:29,973 [INFO] Sent log to topic=logs partition=0 offset=1091 payload={'timestamp': '2026-04-06T14:18:29.909460+00:00', 'level': 'WARN', 'message': 'Database connection latency detected'}
+2026-04-06 19:48:31,035 [INFO] Sent log to topic=logs partition=0 offset=1094 payload={'timestamp': '2026-04-06T14:18:30.974656+00:00', 'level': 'INFO', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:48:32,102 [INFO] Sent log to topic=logs partition=0 offset=1097 payload={'timestamp': '2026-04-06T14:18:32.035840+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:48:33,171 [INFO] Sent log to topic=logs partition=0 offset=1100 payload={'timestamp': '2026-04-06T14:18:33.103384+00:00', 'level': 'WARN', 'message': 'Background job completed'}
+2026-04-06 19:48:34,233 [INFO] Sent log to topic=logs partition=0 offset=1103 payload={'timestamp': '2026-04-06T14:18:34.172488+00:00', 'level': 'ERROR', 'message': 'Payment request received'}
+2026-04-06 19:48:35,298 [INFO] Sent log to topic=logs partition=0 offset=1106 payload={'timestamp': '2026-04-06T14:18:35.234730+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:48:36,361 [INFO] Sent log to topic=logs partition=0 offset=1109 payload={'timestamp': '2026-04-06T14:18:36.298739+00:00', 'level': 'WARN', 'message': 'User session expired'}
+2026-04-06 19:48:37,430 [INFO] Sent log to topic=logs partition=0 offset=1112 payload={'timestamp': '2026-04-06T14:18:37.362802+00:00', 'level': 'WARN', 'message': 'User session expired'}
+2026-04-06 19:48:38,490 [INFO] Sent log to topic=logs partition=0 offset=1115 payload={'timestamp': '2026-04-06T14:18:38.431223+00:00', 'level': 'ERROR', 'message': 'Payment request received'}
+2026-04-06 19:48:39,556 [INFO] Sent log to topic=logs partition=0 offset=1118 payload={'timestamp': '2026-04-06T14:18:39.490700+00:00', 'level': 'INFO', 'message': 'User login successful'}
+2026-04-06 19:48:40,618 [INFO] Sent log to topic=logs partition=0 offset=1121 payload={'timestamp': '2026-04-06T14:18:40.556965+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:48:41,678 [INFO] Sent log to topic=logs partition=0 offset=1124 payload={'timestamp': '2026-04-06T14:18:41.620245+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:48:42,745 [INFO] Sent log to topic=logs partition=0 offset=1127 payload={'timestamp': '2026-04-06T14:18:42.679435+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:48:43,806 [INFO] Sent log to topic=logs partition=0 offset=1130 payload={'timestamp': '2026-04-06T14:18:43.746684+00:00', 'level': 'ERROR', 'message': 'Background job completed'}
+2026-04-06 19:48:44,869 [INFO] Sent log to topic=logs partition=0 offset=1133 payload={'timestamp': '2026-04-06T14:18:44.807418+00:00', 'level': 'INFO', 'message': 'Database connection latency detected'}
+2026-04-06 19:48:45,937 [INFO] Sent log to topic=logs partition=0 offset=1136 payload={'timestamp': '2026-04-06T14:18:45.870146+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:48:46,996 [INFO] Sent log to topic=logs partition=0 offset=1139 payload={'timestamp': '2026-04-06T14:18:46.937934+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:48:48,066 [INFO] Sent log to topic=logs partition=0 offset=1142 payload={'timestamp': '2026-04-06T14:18:47.996509+00:00', 'level': 'ERROR', 'message': 'Payment request received'}
+2026-04-06 19:48:49,130 [INFO] Sent log to topic=logs partition=0 offset=1145 payload={'timestamp': '2026-04-06T14:18:49.066977+00:00', 'level': 'INFO', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:48:50,199 [INFO] Sent log to topic=logs partition=0 offset=1148 payload={'timestamp': '2026-04-06T14:18:50.131797+00:00', 'level': 'INFO', 'message': 'User login successful'}
+2026-04-06 19:48:51,263 [INFO] Sent log to topic=logs partition=0 offset=1151 payload={'timestamp': '2026-04-06T14:18:51.199955+00:00', 'level': 'WARN', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:48:52,323 [INFO] Sent log to topic=logs partition=0 offset=1154 payload={'timestamp': '2026-04-06T14:18:52.264258+00:00', 'level': 'WARN', 'message': 'Configuration file reloaded'}
+2026-04-06 19:48:53,392 [INFO] Sent log to topic=logs partition=0 offset=1157 payload={'timestamp': '2026-04-06T14:18:53.324735+00:00', 'level': 'ERROR', 'message': 'Database connection latency detected'}
+2026-04-06 19:48:54,456 [INFO] Sent log to topic=logs partition=0 offset=1160 payload={'timestamp': '2026-04-06T14:18:54.393830+00:00', 'level': 'WARN', 'message': 'User session expired'}
+2026-04-06 19:48:55,521 [INFO] Sent log to topic=logs partition=0 offset=1163 payload={'timestamp': '2026-04-06T14:18:55.457827+00:00', 'level': 'INFO', 'message': 'Service dependency unavailable'}
+2026-04-06 19:48:56,585 [INFO] Sent log to topic=logs partition=0 offset=1166 payload={'timestamp': '2026-04-06T14:18:56.522634+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:48:57,658 [INFO] Sent log to topic=logs partition=0 offset=1169 payload={'timestamp': '2026-04-06T14:18:57.587118+00:00', 'level': 'ERROR', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:48:58,725 [INFO] Sent log to topic=logs partition=0 offset=1172 payload={'timestamp': '2026-04-06T14:18:58.659017+00:00', 'level': 'ERROR', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:48:59,784 [INFO] Sent log to topic=logs partition=0 offset=1175 payload={'timestamp': '2026-04-06T14:18:59.726925+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:49:00,852 [INFO] Sent log to topic=logs partition=0 offset=1178 payload={'timestamp': '2026-04-06T14:19:00.785487+00:00', 'level': 'ERROR', 'message': 'Invalid customer input received'}
+2026-04-06 19:49:01,921 [INFO] Sent log to topic=logs partition=0 offset=1181 payload={'timestamp': '2026-04-06T14:19:01.853481+00:00', 'level': 'INFO', 'message': 'Background job completed'}
+2026-04-06 19:49:02,982 [INFO] Sent log to topic=logs partition=0 offset=1184 payload={'timestamp': '2026-04-06T14:19:02.921703+00:00', 'level': 'INFO', 'message': 'Payment request received'}
+2026-04-06 19:49:04,051 [INFO] Sent log to topic=logs partition=0 offset=1187 payload={'timestamp': '2026-04-06T14:19:03.983016+00:00', 'level': 'WARN', 'message': 'Database connection latency detected'}
+2026-04-06 19:49:05,113 [INFO] Sent log to topic=logs partition=0 offset=1190 payload={'timestamp': '2026-04-06T14:19:05.052480+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:49:06,171 [INFO] Sent log to topic=logs partition=0 offset=1193 payload={'timestamp': '2026-04-06T14:19:06.113798+00:00', 'level': 'WARN', 'message': 'Background job completed'}
+2026-04-06 19:49:07,230 [INFO] Sent log to topic=logs partition=0 offset=1196 payload={'timestamp': '2026-04-06T14:19:07.171935+00:00', 'level': 'WARN', 'message': 'Background job completed'}
+2026-04-06 19:49:08,287 [INFO] Sent log to topic=logs partition=0 offset=1199 payload={'timestamp': '2026-04-06T14:19:08.230787+00:00', 'level': 'INFO', 'message': 'Invalid customer input received'}
+2026-04-06 19:49:09,353 [INFO] Sent log to topic=logs partition=0 offset=1202 payload={'timestamp': '2026-04-06T14:19:09.287658+00:00', 'level': 'INFO', 'message': 'User login successful'}
+2026-04-06 19:49:10,416 [INFO] Sent log to topic=logs partition=0 offset=1205 payload={'timestamp': '2026-04-06T14:19:10.354274+00:00', 'level': 'WARN', 'message': 'User session expired'}
+2026-04-06 19:49:11,482 [INFO] Sent log to topic=logs partition=0 offset=1208 payload={'timestamp': '2026-04-06T14:19:11.417848+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:49:12,547 [INFO] Sent log to topic=logs partition=0 offset=1211 payload={'timestamp': '2026-04-06T14:19:12.483212+00:00', 'level': 'WARN', 'message': 'Payment request received'}
+2026-04-06 19:49:13,607 [INFO] Sent log to topic=logs partition=0 offset=1214 payload={'timestamp': '2026-04-06T14:19:13.547412+00:00', 'level': 'INFO', 'message': 'User login successful'}
+2026-04-06 19:49:14,673 [INFO] Sent log to topic=logs partition=0 offset=1217 payload={'timestamp': '2026-04-06T14:19:14.607698+00:00', 'level': 'INFO', 'message': 'Payment request received'}
+2026-04-06 19:49:15,739 [INFO] Sent log to topic=logs partition=0 offset=1220 payload={'timestamp': '2026-04-06T14:19:15.674075+00:00', 'level': 'ERROR', 'message': 'User session expired'}
+2026-04-06 19:49:16,809 [INFO] Sent log to topic=logs partition=0 offset=1223 payload={'timestamp': '2026-04-06T14:19:16.739874+00:00', 'level': 'WARN', 'message': 'Configuration file reloaded'}
+2026-04-06 19:49:17,865 [INFO] Sent log to topic=logs partition=0 offset=1226 payload={'timestamp': '2026-04-06T14:19:17.810595+00:00', 'level': 'WARN', 'message': 'File upload completed'}
+2026-04-06 19:49:18,932 [INFO] Sent log to topic=logs partition=0 offset=1229 payload={'timestamp': '2026-04-06T14:19:18.866478+00:00', 'level': 'INFO', 'message': 'Database connection latency detected'}
+2026-04-06 19:49:19,994 [INFO] Sent log to topic=logs partition=0 offset=1232 payload={'timestamp': '2026-04-06T14:19:19.933092+00:00', 'level': 'INFO', 'message': 'Invalid customer input received'}
+2026-04-06 19:49:21,060 [INFO] Sent log to topic=logs partition=0 offset=1235 payload={'timestamp': '2026-04-06T14:19:20.994987+00:00', 'level': 'INFO', 'message': 'Service dependency unavailable'}
+2026-04-06 19:49:22,121 [INFO] Sent log to topic=logs partition=0 offset=1238 payload={'timestamp': '2026-04-06T14:19:22.060981+00:00', 'level': 'ERROR', 'message': 'File upload completed'}
+2026-04-06 19:49:23,189 [INFO] Sent log to topic=logs partition=0 offset=1241 payload={'timestamp': '2026-04-06T14:19:23.121891+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:49:24,250 [INFO] Sent log to topic=logs partition=0 offset=1244 payload={'timestamp': '2026-04-06T14:19:24.190773+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:49:25,316 [INFO] Sent log to topic=logs partition=0 offset=1247 payload={'timestamp': '2026-04-06T14:19:25.251201+00:00', 'level': 'WARN', 'message': 'Database connection latency detected'}
+2026-04-06 19:49:26,382 [INFO] Sent log to topic=logs partition=0 offset=1250 payload={'timestamp': '2026-04-06T14:19:26.316874+00:00', 'level': 'ERROR', 'message': 'Payment request received'}
+2026-04-06 19:49:27,439 [INFO] Sent log to topic=logs partition=0 offset=1253 payload={'timestamp': '2026-04-06T14:19:27.383373+00:00', 'level': 'INFO', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:49:28,558 [INFO] Sent log to topic=logs partition=0 offset=1256 payload={'timestamp': '2026-04-06T14:19:28.452612+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:49:29,625 [INFO] Sent log to topic=logs partition=0 offset=1259 payload={'timestamp': '2026-04-06T14:19:29.559403+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:49:30,681 [INFO] Sent log to topic=logs partition=0 offset=1262 payload={'timestamp': '2026-04-06T14:19:30.626564+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:49:31,753 [INFO] Sent log to topic=logs partition=0 offset=1265 payload={'timestamp': '2026-04-06T14:19:31.682476+00:00', 'level': 'ERROR', 'message': 'User session expired'}
+2026-04-06 19:49:32,823 [INFO] Sent log to topic=logs partition=0 offset=1268 payload={'timestamp': '2026-04-06T14:19:32.754231+00:00', 'level': 'WARN', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:49:33,883 [INFO] Sent log to topic=logs partition=0 offset=1270 payload={'timestamp': '2026-04-06T14:19:33.824511+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+ted'}
+2026-04-06 19:49:30,200 [INFO] Sent log to topic=logs partition=0 offset=1260 payload={'timestamp': '2026-04-06T14:19:30.142828+00:00', 'level': 'ERROR', 'message': 'Invalid customer input received'}
+2026-04-06 19:49:31,263 [INFO] Sent log to topic=logs partition=0 offset=1263 payload={'timestamp': '2026-04-06T14:19:31.200992+00:00', 'level': 'ERROR', 'message': 'Payment request received'}
+2026-04-06 19:49:32,333 [INFO] Sent log to topic=logs partition=0 offset=1266 payload={'timestamp': '2026-04-06T14:19:32.264264+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:49:33,434 [INFO] Sent log to topic=logs partition=0 offset=1269 payload={'timestamp': '2026-04-06T14:19:33.347039+00:00', 'level': 'INFO', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:51:37,518 [INFO] <BrokerConnection node_id=bootstrap-0 host=host.docker.internal:9092 <connecting> [IPv4 ('192.168.1.76', 9092)]>: connecting to host.docker.internal:9092 [('192.168.1.76', 9092) IPv4]
+2026-04-06 19:51:37,519 [INFO] Probing node bootstrap-0 broker version
+2026-04-06 19:51:37,520 [INFO] <BrokerConnection node_id=bootstrap-0 host=host.docker.internal:9092 <connecting> [IPv4 ('192.168.1.76', 9092)]>: Connection complete.
+2026-04-06 19:51:37,626 [INFO] Broker version identified as 2.6.0
+2026-04-06 19:51:37,627 [INFO] Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+2026-04-06 19:51:37,630 [INFO] Kafka producer connected to host.docker.internal:9092 and publishing to topic 'logs'.
+2026-04-06 19:51:37,685 [INFO] <BrokerConnection node_id=1 host=host.docker.internal:9092 <connecting> [IPv4 ('192.168.1.76', 9092)]>: connecting to host.docker.internal:9092 [('192.168.1.76', 9092) IPv4]
+2026-04-06 19:51:37,687 [INFO] <BrokerConnection node_id=1 host=host.docker.internal:9092 <connecting> [IPv4 ('192.168.1.76', 9092)]>: Connection complete.
+2026-04-06 19:51:37,687 [INFO] <BrokerConnection node_id=bootstrap-0 host=host.docker.internal:9092 <connected> [IPv4 ('192.168.1.76', 9092)]>: Closing connection. 
+2026-04-06 19:51:37,696 [INFO] Sent log to topic=logs partition=0 offset=1271 payload={'timestamp': '2026-04-06T14:21:37.630747+00:00', 'level': 'WARN', 'message': 'Database connection latency detected'}
+2026-04-06 19:51:38,752 [INFO] Sent log to topic=logs partition=0 offset=1272 payload={'timestamp': '2026-04-06T14:21:38.697684+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:51:39,815 [INFO] Sent log to topic=logs partition=0 offset=1273 payload={'timestamp': '2026-04-06T14:21:39.752708+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:51:40,893 [INFO] Sent log to topic=logs partition=0 offset=1274 payload={'timestamp': '2026-04-06T14:21:40.816456+00:00', 'level': 'WARN', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:51:41,951 [INFO] Sent log to topic=logs partition=0 offset=1275 payload={'timestamp': '2026-04-06T14:21:41.894143+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:51:43,010 [INFO] Sent log to topic=logs partition=0 offset=1276 payload={'timestamp': '2026-04-06T14:21:42.951722+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:51:44,074 [INFO] Sent log to topic=logs partition=0 offset=1277 payload={'timestamp': '2026-04-06T14:21:44.011233+00:00', 'level': 'WARN', 'message': 'File upload completed'}
+2026-04-06 19:51:45,139 [INFO] Sent log to topic=logs partition=0 offset=1278 payload={'timestamp': '2026-04-06T14:21:45.074986+00:00', 'level': 'WARN', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:51:46,207 [INFO] Sent log to topic=logs partition=0 offset=1279 payload={'timestamp': '2026-04-06T14:21:46.140773+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:51:47,265 [INFO] Sent log to topic=logs partition=0 offset=1280 payload={'timestamp': '2026-04-06T14:21:47.207967+00:00', 'level': 'WARN', 'message': 'Background job completed'}
+2026-04-06 19:51:48,323 [INFO] Sent log to topic=logs partition=0 offset=1281 payload={'timestamp': '2026-04-06T14:21:48.265683+00:00', 'level': 'INFO', 'message': 'Service dependency unavailable'}
+2026-04-06 19:51:49,383 [INFO] Sent log to topic=logs partition=0 offset=1282 payload={'timestamp': '2026-04-06T14:21:49.323800+00:00', 'level': 'INFO', 'message': 'User session expired'}
+2026-04-06 19:51:50,444 [INFO] Sent log to topic=logs partition=0 offset=1283 payload={'timestamp': '2026-04-06T14:21:50.384727+00:00', 'level': 'WARN', 'message': 'Background job completed'}
+2026-04-06 19:51:51,500 [INFO] Sent log to topic=logs partition=0 offset=1284 payload={'timestamp': '2026-04-06T14:21:51.444733+00:00', 'level': 'ERROR', 'message': 'Database connection latency detected'}
+2026-04-06 19:51:52,556 [INFO] Sent log to topic=logs partition=0 offset=1285 payload={'timestamp': '2026-04-06T14:21:52.501064+00:00', 'level': 'ERROR', 'message': 'File upload completed'}
+2026-04-06 19:51:53,626 [INFO] Sent log to topic=logs partition=0 offset=1286 payload={'timestamp': '2026-04-06T14:21:53.556602+00:00', 'level': 'ERROR', 'message': 'API rate limit nearing threshold'}
+2026-04-06 19:51:54,690 [INFO] Sent log to topic=logs partition=0 offset=1287 payload={'timestamp': '2026-04-06T14:21:54.627983+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:51:55,757 [INFO] Sent log to topic=logs partition=0 offset=1288 payload={'timestamp': '2026-04-06T14:21:55.691797+00:00', 'level': 'WARN', 'message': 'Invalid customer input received'}
+2026-04-06 19:51:56,815 [INFO] Sent log to topic=logs partition=0 offset=1289 payload={'timestamp': '2026-04-06T14:21:56.758192+00:00', 'level': 'INFO', 'message': 'Unexpected application exception occurred'}
+2026-04-06 19:51:57,876 [INFO] Sent log to topic=logs partition=0 offset=1290 payload={'timestamp': '2026-04-06T14:21:57.816250+00:00', 'level': 'WARN', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:51:58,939 [INFO] Sent log to topic=logs partition=0 offset=1291 payload={'timestamp': '2026-04-06T14:21:58.877225+00:00', 'level': 'ERROR', 'message': 'Database connection latency detected'}
+2026-04-06 19:52:00,022 [INFO] Sent log to topic=logs partition=0 offset=1292 payload={'timestamp': '2026-04-06T14:21:59.948571+00:00', 'level': 'ERROR', 'message': 'Configuration file reloaded'}
+2026-04-06 19:52:01,085 [INFO] Sent log to topic=logs partition=0 offset=1293 payload={'timestamp': '2026-04-06T14:22:01.022674+00:00', 'level': 'ERROR', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:52:02,152 [INFO] Sent log to topic=logs partition=0 offset=1294 payload={'timestamp': '2026-04-06T14:22:02.086430+00:00', 'level': 'ERROR', 'message': 'Service dependency unavailable'}
+2026-04-06 19:52:03,222 [INFO] Sent log to topic=logs partition=0 offset=1295 payload={'timestamp': '2026-04-06T14:22:03.153371+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:52:04,304 [INFO] Sent log to topic=logs partition=0 offset=1296 payload={'timestamp': '2026-04-06T14:22:04.234532+00:00', 'level': 'WARN', 'message': 'Payment request received'}
+2026-04-06 19:52:05,365 [INFO] Sent log to topic=logs partition=0 offset=1297 payload={'timestamp': '2026-04-06T14:22:05.305278+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:52:06,424 [INFO] Sent log to topic=logs partition=0 offset=1298 payload={'timestamp': '2026-04-06T14:22:06.365995+00:00', 'level': 'INFO', 'message': 'Invalid customer input received'}
+2026-04-06 19:52:07,481 [INFO] Sent log to topic=logs partition=0 offset=1299 payload={'timestamp': '2026-04-06T14:22:07.424980+00:00', 'level': 'WARN', 'message': 'Service dependency unavailable'}
+2026-04-06 19:52:08,556 [INFO] Sent log to topic=logs partition=0 offset=1300 payload={'timestamp': '2026-04-06T14:22:08.490733+00:00', 'level': 'INFO', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:52:09,620 [INFO] Sent log to topic=logs partition=0 offset=1301 payload={'timestamp': '2026-04-06T14:22:09.557138+00:00', 'level': 'INFO', 'message': 'User session expired'}
+2026-04-06 19:52:10,684 [INFO] Sent log to topic=logs partition=0 offset=1302 payload={'timestamp': '2026-04-06T14:22:10.621474+00:00', 'level': 'ERROR', 'message': 'Disk usage crossed warning threshold'}
+2026-04-06 19:52:11,747 [INFO] Sent log to topic=logs partition=0 offset=1303 payload={'timestamp': '2026-04-06T14:22:11.684841+00:00', 'level': 'WARN', 'message': 'File upload completed'}
+2026-04-06 19:52:12,802 [INFO] Sent log to topic=logs partition=0 offset=1304 payload={'timestamp': '2026-04-06T14:22:12.747421+00:00', 'level': 'INFO', 'message': 'Invalid customer input received'}
+2026-04-06 19:52:13,868 [INFO] Sent log to topic=logs partition=0 offset=1305 payload={'timestamp': '2026-04-06T14:22:13.803766+00:00', 'level': 'INFO', 'message': 'Invalid customer input received'}
+2026-04-06 19:52:14,937 [INFO] Sent log to topic=logs partition=0 offset=1306 payload={'timestamp': '2026-04-06T14:22:14.868942+00:00', 'level': 'WARN', 'message': 'User login successful'}
+2026-04-06 19:52:16,004 [INFO] Sent log to topic=logs partition=0 offset=1307 payload={'timestamp': '2026-04-06T14:22:15.940526+00:00', 'level': 'INFO', 'message': 'Payment request received'}
+2026-04-06 19:52:17,080 [INFO] Sent log to topic=logs partition=0 offset=1308 payload={'timestamp': '2026-04-06T14:22:17.005280+00:00', 'level': 'ERROR', 'message': 'Invalid customer input received'}

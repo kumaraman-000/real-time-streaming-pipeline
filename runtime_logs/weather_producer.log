@@ -1,0 +1,637 @@
+2026-04-06 21:04:18,784 [INFO] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2026-04-06 21:04:18,785 [INFO] Probing node bootstrap-0 broker version
+2026-04-06 21:04:18,787 [INFO] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2026-04-06 21:04:18,894 [INFO] Broker version identified as 2.6.0
+2026-04-06 21:04:18,894 [INFO] Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+2026-04-06 21:04:18,897 [INFO] Connected | bootstrap=localhost:9092 topic=weather_events cities=6 interval=10s
+2026-04-06 21:04:19,526 [INFO] <BrokerConnection node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2026-04-06 21:04:19,533 [INFO] <BrokerConnection node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2026-04-06 21:04:19,533 [INFO] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2026-04-06 21:04:20,427 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=0
+2026-04-06 21:04:21,071 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=1
+2026-04-06 21:04:21,697 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=2
+2026-04-06 21:04:22,317 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=3
+2026-04-06 21:04:22,946 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=4
+2026-04-06 21:04:23,594 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=5
+2026-04-06 21:04:34,316 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=6
+2026-04-06 21:04:34,948 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=7
+2026-04-06 21:04:35,671 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=8
+2026-04-06 21:04:45,693 [ERROR] API error for Sydney: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=-33.8688&longitude=151.2093&current=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cprecipitation%2Cweather_code&timezone=UTC (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.open-meteo.com', port=443) at 0x21e7e9ff4d0>, 'Connection to api.open-meteo.com timed out. (connect timeout=10)'))
+2026-04-06 21:04:46,312 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=9
+2026-04-06 21:04:46,944 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=10
+2026-04-06 21:04:57,595 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=11
+2026-04-06 21:04:58,269 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=12
+2026-04-06 21:04:58,916 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=13
+2026-04-06 21:04:59,581 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=14
+2026-04-06 21:05:00,224 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=15
+2026-04-06 21:05:00,864 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=16
+2026-04-06 21:05:11,531 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=17
+2026-04-06 21:05:12,189 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=18
+2026-04-06 21:05:12,857 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=19
+2026-04-06 21:05:13,496 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=20
+2026-04-06 21:05:14,165 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=21
+2026-04-06 21:05:14,811 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=22
+2026-04-06 21:05:25,473 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=23
+2026-04-06 21:05:26,236 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=24
+2026-04-06 21:05:26,969 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=25
+2026-04-06 21:05:27,618 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=26
+2026-04-06 21:05:28,343 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=27
+2026-04-06 21:05:28,997 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=28
+2026-04-06 21:05:39,640 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=29
+2026-04-06 21:05:40,325 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=30
+2026-04-06 21:05:40,967 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=31
+2026-04-06 21:05:41,608 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=32
+2026-04-06 21:05:42,286 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=33
+2026-04-06 21:05:42,935 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=34
+2026-04-06 21:05:53,556 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=35
+2026-04-06 21:05:54,190 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=36
+2026-04-06 21:05:54,827 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=37
+2026-04-06 21:05:55,484 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=38
+2026-04-06 21:05:56,123 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=39
+2026-04-06 21:05:56,798 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=40
+2026-04-06 21:06:07,428 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=41
+2026-04-06 21:06:08,045 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=42
+2026-04-06 21:06:08,738 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=43
+2026-04-06 21:06:09,393 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=44
+2026-04-06 21:06:10,026 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=45
+2026-04-06 21:06:10,756 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=46
+2026-04-06 21:06:21,416 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=47
+2026-04-06 21:06:22,165 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=48
+2026-04-06 21:06:22,813 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=49
+2026-04-06 21:06:23,475 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=50
+2026-04-06 21:06:24,107 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=51
+2026-04-06 21:06:24,769 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=52
+2026-04-06 21:06:35,425 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=53
+2026-04-06 21:06:36,078 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=54
+2026-04-06 21:06:36,698 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=55
+2026-04-06 21:06:37,336 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=56
+2026-04-06 21:06:37,961 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=57
+2026-04-06 21:06:38,610 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=58
+2026-04-06 21:06:49,260 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=59
+2026-04-06 21:06:49,896 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=60
+2026-04-06 21:06:50,517 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=61
+2026-04-06 21:06:51,167 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=62
+2026-04-06 21:06:51,780 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=63
+2026-04-06 21:06:52,414 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=64
+2026-04-06 21:07:03,038 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=65
+2026-04-06 21:07:03,703 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=66
+2026-04-06 21:07:13,710 [ERROR] API error for Tokyo: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=35.6762&longitude=139.6503&current=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cprecipitation%2Cweather_code&timezone=UTC (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.open-meteo.com', port=443) at 0x21e7ea192b0>, 'Connection to api.open-meteo.com timed out. (connect timeout=10)'))
+2026-04-06 21:07:14,379 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=67
+2026-04-06 21:07:15,009 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=68
+2026-04-06 21:07:15,626 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=69
+2026-04-06 21:07:26,282 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=70
+2026-04-06 21:07:26,913 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=71
+2026-04-06 21:07:27,573 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=72
+2026-04-06 21:07:28,198 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=73
+2026-04-06 21:07:28,857 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=74
+2026-04-06 21:07:29,473 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=75
+2026-04-06 21:07:40,126 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=76
+2026-04-06 21:07:40,768 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=77
+2026-04-06 21:07:41,416 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=78
+2026-04-06 21:07:42,035 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=79
+2026-04-06 21:07:42,682 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=80
+2026-04-06 21:07:43,305 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=81
+2026-04-06 21:07:53,991 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=82
+2026-04-06 21:07:54,657 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=83
+2026-04-06 21:07:55,285 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=84
+2026-04-06 21:07:55,921 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=85
+2026-04-06 21:07:56,567 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=86
+2026-04-06 21:07:57,197 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=87
+2026-04-06 21:08:07,827 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=88
+2026-04-06 21:08:08,441 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=89
+2026-04-06 21:08:09,073 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=90
+2026-04-06 21:08:09,757 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=91
+2026-04-06 21:08:10,370 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=92
+2026-04-06 21:08:11,013 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=93
+2026-04-06 21:08:21,732 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=94
+2026-04-06 21:08:22,399 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=95
+2026-04-06 21:08:23,046 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=96
+2026-04-06 21:08:23,670 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=97
+2026-04-06 21:08:24,289 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=98
+2026-04-06 21:08:24,955 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=99
+2026-04-06 21:08:35,613 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=100
+2026-04-06 21:08:36,249 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=101
+2026-04-06 21:08:36,911 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=102
+2026-04-06 21:08:37,531 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=103
+2026-04-06 21:08:38,165 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=104
+2026-04-06 21:08:38,806 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=105
+2026-04-06 21:08:49,443 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=106
+2026-04-06 21:08:50,153 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=107
+2026-04-06 21:08:50,829 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=108
+2026-04-06 21:08:51,509 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=109
+2026-04-06 21:08:52,162 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=110
+2026-04-06 21:08:52,826 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=111
+2026-04-06 21:09:03,552 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=112
+2026-04-06 21:09:04,236 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=113
+2026-04-06 21:09:04,906 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=114
+2026-04-06 21:09:05,555 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=115
+2026-04-06 21:09:06,188 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=116
+2026-04-06 21:09:06,843 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=117
+2026-04-06 21:09:17,468 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=118
+2026-04-06 21:09:18,078 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=119
+2026-04-06 21:09:18,733 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=120
+2026-04-06 21:09:19,349 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=121
+2026-04-06 21:09:20,001 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=122
+2026-04-06 21:09:20,640 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=123
+2026-04-06 21:09:31,307 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=124
+2026-04-06 21:09:31,968 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=125
+2026-04-06 21:09:32,597 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=126
+2026-04-06 21:09:33,299 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=127
+2026-04-06 21:09:33,941 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=128
+2026-04-06 21:09:34,590 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=129
+2026-04-06 21:09:45,225 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=130
+2026-04-06 21:09:45,861 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=131
+2026-04-06 21:09:46,490 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=132
+2026-04-06 21:09:47,124 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=133
+2026-04-06 21:09:47,768 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=134
+2026-04-06 21:09:48,403 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=135
+2026-04-06 21:09:59,064 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=136
+2026-04-06 21:09:59,718 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=137
+2026-04-06 21:10:00,381 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=138
+2026-04-06 21:10:05,497 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=139
+2026-04-06 21:10:09,114 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=140
+2026-04-06 21:10:11,290 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=141
+2026-04-06 21:10:21,980 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=143
+2026-04-06 21:10:22,644 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=145
+2026-04-06 21:10:23,276 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=147
+2026-04-06 21:10:23,899 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=149
+2026-04-06 21:10:24,521 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=151
+2026-04-06 21:10:25,163 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=153
+2026-04-06 21:10:35,829 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=155
+2026-04-06 21:10:36,484 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=157
+2026-04-06 21:10:37,112 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=159
+2026-04-06 21:10:37,733 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=161
+2026-04-06 21:10:38,407 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=163
+2026-04-06 21:10:39,049 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=165
+2026-04-06 21:10:49,743 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=167
+2026-04-06 21:10:50,369 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=169
+2026-04-06 21:10:51,046 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=170
+2026-04-06 21:10:51,695 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=171
+2026-04-06 21:10:52,361 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=172
+2026-04-06 21:10:52,979 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=173
+2026-04-06 21:11:03,621 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=174
+2026-04-06 21:11:04,251 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=175
+2026-04-06 21:11:04,916 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=176
+2026-04-06 21:11:05,590 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=177
+2026-04-06 21:11:06,212 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=178
+2026-04-06 21:11:06,843 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=179
+2026-04-06 21:11:17,497 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=180
+2026-04-06 21:11:18,122 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=181
+2026-04-06 21:11:18,755 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=182
+2026-04-06 21:11:19,403 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=183
+2026-04-06 21:11:20,077 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=184
+2026-04-06 21:11:20,715 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=185
+2026-04-06 21:11:31,344 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=186
+2026-04-06 21:11:31,989 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=187
+2026-04-06 21:11:32,655 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=188
+2026-04-06 21:11:33,286 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=189
+2026-04-06 21:11:33,901 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=190
+2026-04-06 21:11:34,519 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=191
+2026-04-06 21:11:45,178 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=192
+2026-04-06 21:11:45,822 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=193
+2026-04-06 21:11:46,490 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=194
+2026-04-06 21:11:47,105 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=195
+2026-04-06 21:11:47,737 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=196
+2026-04-06 21:11:48,420 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=197
+2026-04-06 21:11:59,108 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=198
+2026-04-06 21:11:59,744 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=199
+2026-04-06 21:12:00,358 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=200
+2026-04-06 21:12:01,007 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=201
+2026-04-06 21:12:01,619 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=202
+2026-04-06 21:12:02,238 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=203
+2026-04-06 21:12:12,861 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=204
+2026-04-06 21:12:13,579 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=205
+2026-04-06 21:12:14,278 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=206
+2026-04-06 21:12:14,887 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=207
+2026-04-06 21:12:15,527 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=208
+2026-04-06 21:12:16,205 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=209
+2026-04-06 21:12:26,843 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=210
+2026-04-06 21:12:27,481 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=211
+2026-04-06 21:12:28,140 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=212
+2026-04-06 21:12:28,794 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=213
+2026-04-06 21:12:29,436 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=214
+2026-04-06 21:12:30,071 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=215
+2026-04-06 21:12:40,736 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=217
+2026-04-06 21:12:41,371 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=219
+2026-04-06 21:12:42,000 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=221
+2026-04-06 21:12:42,633 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=222
+2026-04-06 21:12:43,270 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=224
+2026-04-06 21:12:43,901 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=226
+2026-04-06 21:12:54,541 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=228
+2026-04-06 21:12:55,220 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=229
+2026-04-06 21:12:55,864 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=230
+2026-04-06 21:12:56,556 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=231
+2026-04-06 21:12:57,214 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=232
+2026-04-06 21:12:57,861 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=233
+2026-04-06 21:13:08,509 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=239
+2026-04-06 21:13:09,144 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=240
+2026-04-06 21:13:09,805 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=241
+2026-04-06 21:13:10,436 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=242
+2026-04-06 21:13:11,073 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=243
+2026-04-06 21:13:11,696 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=244
+2026-04-06 21:13:22,311 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=251
+2026-04-06 21:13:22,919 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=252
+2026-04-06 21:13:23,568 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=253
+2026-04-06 21:13:24,197 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=254
+2026-04-06 21:13:24,833 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=255
+2026-04-06 21:13:25,478 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=256
+2026-04-06 21:13:36,108 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=263
+2026-04-06 21:13:36,756 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=264
+2026-04-06 21:13:37,398 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=265
+2026-04-06 21:13:38,015 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=266
+2026-04-06 21:13:38,668 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=267
+2026-04-06 21:13:39,287 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=268
+2026-04-06 21:13:49,969 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=275
+2026-04-06 21:13:50,596 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=276
+2026-04-06 21:13:51,234 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=277
+2026-04-06 21:13:51,876 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=278
+2026-04-06 21:13:52,492 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=279
+2026-04-06 21:13:53,209 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=280
+2026-04-06 21:14:03,862 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=287
+2026-04-06 21:14:04,555 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=288
+2026-04-06 21:14:05,247 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=289
+2026-04-06 21:14:05,883 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=290
+2026-04-06 21:14:06,546 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=291
+2026-04-06 21:14:07,174 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=292
+2026-04-06 21:14:17,803 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=299
+2026-04-06 21:14:18,435 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=300
+2026-04-06 21:14:19,084 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=301
+2026-04-06 21:14:19,784 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=302
+2026-04-06 21:14:20,452 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=303
+2026-04-06 21:14:21,107 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=304
+2026-04-06 21:14:31,756 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=311
+2026-04-06 21:14:32,401 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=312
+2026-04-06 21:14:33,034 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=313
+2026-04-06 21:14:33,685 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=314
+2026-04-06 21:14:34,334 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=315
+2026-04-06 21:14:34,997 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=316
+2026-04-06 21:14:45,690 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=317
+2026-04-06 21:14:46,339 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=318
+2026-04-06 21:14:46,983 [INFO] city=Tokyo      temp= +15.5°C hum= 76% wind=  7.2 km/h | partition=0 offset=319
+2026-04-06 21:14:47,622 [INFO] city=Sydney     temp= +12.9°C hum= 99% wind=  3.3 km/h | partition=0 offset=320
+2026-04-06 21:14:48,231 [INFO] city=Paris      temp= +18.3°C hum= 42% wind=  7.6 km/h | partition=0 offset=321
+2026-04-06 21:14:48,871 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 23.0 km/h | partition=0 offset=322
+2026-04-06 21:14:59,498 [INFO] city=New York   temp=  +8.4°C hum= 48% wind= 23.1 km/h | partition=0 offset=323
+2026-04-06 21:15:00,146 [INFO] city=London     temp= +15.9°C hum= 34% wind= 13.0 km/h | partition=0 offset=324
+2026-04-06 21:15:00,857 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=325
+2026-04-06 21:15:01,568 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=326
+2026-04-06 21:15:02,286 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=327
+2026-04-06 21:15:02,935 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=328
+2026-04-06 21:15:13,561 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=329
+2026-04-06 21:15:14,200 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=330
+2026-04-06 21:15:14,867 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=331
+2026-04-06 21:15:15,562 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=332
+2026-04-06 21:15:16,232 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=333
+2026-04-06 21:15:16,939 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=334
+2026-04-06 21:15:27,593 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=335
+2026-04-06 21:15:28,227 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=336
+2026-04-06 21:15:28,891 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=337
+2026-04-06 21:15:29,524 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=338
+2026-04-06 21:15:30,149 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=339
+2026-04-06 21:15:30,769 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=340
+2026-04-06 21:15:41,469 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=341
+2026-04-06 21:15:42,099 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=342
+2026-04-06 21:15:42,722 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=343
+2026-04-06 21:15:43,340 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=344
+2026-04-06 21:15:44,003 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=345
+2026-04-06 21:15:44,635 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=346
+2026-04-06 21:15:55,286 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=347
+2026-04-06 21:15:55,950 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=348
+2026-04-06 21:15:56,584 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=349
+2026-04-06 21:15:57,213 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=350
+2026-04-06 21:15:57,850 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=351
+2026-04-06 21:15:58,562 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=352
+2026-04-06 21:16:09,237 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=353
+2026-04-06 21:16:09,951 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=354
+2026-04-06 21:16:10,636 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=355
+2026-04-06 21:16:11,308 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=356
+2026-04-06 21:16:11,963 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=357
+2026-04-06 21:16:12,644 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=358
+2026-04-06 21:16:23,343 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=359
+2026-04-06 21:16:23,999 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=360
+2026-04-06 21:16:24,679 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=361
+2026-04-06 21:16:25,330 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=362
+2026-04-06 21:16:26,008 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=363
+2026-04-06 21:16:26,663 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=364
+2026-04-06 21:16:37,313 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=365
+2026-04-06 21:16:38,009 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=366
+2026-04-06 21:16:38,642 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=367
+2026-04-06 21:16:39,288 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=368
+2026-04-06 21:16:39,954 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=369
+2026-04-06 21:16:40,635 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=370
+2026-04-06 21:16:52,541 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=371
+2026-04-06 21:16:53,173 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=372
+2026-04-06 21:16:53,839 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=373
+2026-04-06 21:16:54,521 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=374
+2026-04-06 21:16:55,202 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=375
+2026-04-06 21:16:55,866 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=376
+2026-04-06 21:17:06,525 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=377
+2026-04-06 21:17:07,183 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=378
+2026-04-06 21:17:07,871 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=379
+2026-04-06 21:17:08,583 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=380
+2026-04-06 21:17:09,240 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=381
+2026-04-06 21:17:09,904 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=382
+2026-04-06 21:17:20,579 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=383
+2026-04-06 21:17:21,300 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=384
+2026-04-06 21:17:21,951 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=385
+2026-04-06 21:17:22,722 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=386
+2026-04-06 21:17:23,374 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=387
+2026-04-06 21:17:24,106 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=388
+2026-04-06 21:17:34,757 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=389
+2026-04-06 21:17:35,469 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=390
+2026-04-06 21:17:36,141 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=391
+2026-04-06 21:17:36,794 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=392
+2026-04-06 21:17:37,442 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=393
+2026-04-06 21:17:38,108 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=394
+2026-04-06 21:17:48,756 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=395
+2026-04-06 21:17:49,403 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=396
+2026-04-06 21:17:50,045 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=397
+2026-04-06 21:17:50,731 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=398
+2026-04-06 21:17:51,408 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=399
+2026-04-06 21:17:52,061 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=400
+2026-04-06 21:18:02,724 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=401
+2026-04-06 21:18:03,380 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=402
+2026-04-06 21:18:04,066 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=403
+2026-04-06 21:18:04,724 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=404
+2026-04-06 21:18:05,396 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=405
+2026-04-06 21:18:06,140 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=406
+2026-04-06 21:18:16,836 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=407
+2026-04-06 21:18:17,485 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=408
+2026-04-06 21:18:18,180 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=409
+2026-04-06 21:18:18,815 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=410
+2026-04-06 21:18:19,444 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=411
+2026-04-06 21:18:20,095 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=412
+2026-04-06 21:18:30,741 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=413
+2026-04-06 21:18:31,372 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=414
+2026-04-06 21:18:32,023 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=415
+2026-04-06 21:18:32,652 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=416
+2026-04-06 21:18:33,267 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=417
+2026-04-06 21:18:33,896 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=418
+2026-04-06 21:18:44,541 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=419
+2026-04-06 21:18:45,171 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=420
+2026-04-06 21:18:45,787 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=421
+2026-04-06 21:18:46,404 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=422
+2026-04-06 21:18:47,073 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=423
+2026-04-06 21:18:47,700 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=424
+2026-04-06 21:18:58,317 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=425
+2026-04-06 21:18:58,956 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=426
+2026-04-06 21:18:59,655 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=427
+2026-04-06 21:19:00,273 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=428
+2026-04-06 21:19:00,906 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=429
+2026-04-06 21:19:01,555 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=430
+2026-04-06 21:19:12,529 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=431
+2026-04-06 21:19:13,244 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=432
+2026-04-06 21:19:13,907 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=433
+2026-04-06 21:19:14,556 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=434
+2026-04-06 21:19:15,170 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=435
+2026-04-06 21:19:15,854 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=436
+2026-04-06 21:19:26,563 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=437
+2026-04-06 21:19:27,231 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=438
+2026-04-06 21:19:27,859 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=439
+2026-04-06 21:19:28,523 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=440
+2026-04-06 21:19:29,209 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=441
+2026-04-06 21:19:30,073 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=442
+2026-04-06 21:19:40,947 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=443
+2026-04-06 21:19:41,732 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=444
+2026-04-06 21:19:42,462 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=445
+2026-04-06 21:19:43,094 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=446
+2026-04-06 21:19:43,770 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=447
+2026-04-06 21:19:44,474 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=448
+2026-04-06 21:19:55,198 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=449
+2026-04-06 21:19:55,983 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=450
+2026-04-06 21:19:56,651 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=451
+2026-04-06 21:19:57,313 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=452
+2026-04-06 21:19:58,026 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=453
+2026-04-06 21:19:58,809 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=454
+2026-04-06 21:20:11,517 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=455
+2026-04-06 21:20:13,371 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=456
+2026-04-06 21:20:14,673 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=457
+2026-04-06 21:20:15,968 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=458
+2026-04-06 21:20:16,885 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=459
+2026-04-06 21:20:17,667 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=460
+2026-04-06 21:20:29,808 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=461
+2026-04-06 21:20:32,804 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=462
+2026-04-06 21:20:35,624 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=463
+2026-04-06 21:20:37,708 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=464
+2026-04-06 21:20:38,469 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=465
+2026-04-06 21:20:39,383 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=466
+2026-04-06 21:20:50,773 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=467
+2026-04-06 21:20:51,481 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=468
+2026-04-06 21:20:52,146 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=469
+2026-04-06 21:20:52,819 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=470
+2026-04-06 21:20:53,502 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=471
+2026-04-06 21:20:54,183 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=472
+2026-04-06 21:21:04,861 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=473
+2026-04-06 21:21:05,543 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=474
+2026-04-06 21:21:06,174 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=475
+2026-04-06 21:21:06,860 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=476
+2026-04-06 21:21:07,490 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=477
+2026-04-06 21:21:08,268 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=478
+2026-04-06 21:21:18,950 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=479
+2026-04-06 21:21:19,561 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=480
+2026-04-06 21:21:20,230 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=481
+2026-04-06 21:21:20,850 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=482
+2026-04-06 21:21:21,494 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=483
+2026-04-06 21:21:22,146 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=484
+2026-04-06 21:21:32,766 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=485
+2026-04-06 21:21:33,426 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=486
+2026-04-06 21:21:34,676 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=487
+2026-04-06 21:21:35,311 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=488
+2026-04-06 21:21:35,960 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=489
+2026-04-06 21:21:36,591 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=490
+2026-04-06 21:21:47,270 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=491
+2026-04-06 21:21:47,899 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=492
+2026-04-06 21:21:48,546 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=493
+2026-04-06 21:21:49,227 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=494
+2026-04-06 21:21:49,961 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=495
+2026-04-06 21:21:50,611 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=496
+2026-04-06 21:22:03,765 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=497
+2026-04-06 21:22:04,528 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=498
+2026-04-06 21:22:05,177 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=499
+2026-04-06 21:22:05,821 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=500
+2026-04-06 21:22:06,451 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=501
+2026-04-06 21:22:07,142 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=502
+2026-04-06 21:22:17,801 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=503
+2026-04-06 21:22:18,466 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=504
+2026-04-06 21:22:19,182 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=505
+2026-04-06 21:22:19,927 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=506
+2026-04-06 21:22:20,579 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=507
+2026-04-06 21:22:21,287 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=508
+2026-04-06 21:22:31,945 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=509
+2026-04-06 21:22:32,620 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=510
+2026-04-06 21:22:33,481 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=511
+2026-04-06 21:22:34,115 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=512
+2026-04-06 21:22:34,781 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=513
+2026-04-06 21:22:35,465 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=514
+2026-04-06 21:22:46,072 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=515
+2026-04-06 21:22:46,716 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=516
+2026-04-06 21:22:47,364 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=517
+2026-04-06 21:22:47,999 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=518
+2026-04-06 21:22:48,678 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=519
+2026-04-06 21:22:49,323 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=520
+2026-04-06 21:23:00,322 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=521
+2026-04-06 21:23:00,974 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=522
+2026-04-06 21:23:01,655 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=523
+2026-04-06 21:23:02,279 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=524
+2026-04-06 21:23:02,942 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=525
+2026-04-06 21:23:03,573 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=526
+2026-04-06 21:23:12,905 [INFO] Signal 2 received — shutting down.
+2026-04-06 21:23:12,908 [INFO] Producer stopped.
+2026-04-06 21:23:12,908 [INFO] Closing the Kafka producer with 4294967.0 secs timeout.
+2026-04-06 21:23:12,908 [INFO] <BrokerConnection node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2026-04-06 21:23:43,524 [INFO] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2026-04-06 21:23:43,526 [INFO] Probing node bootstrap-0 broker version
+2026-04-06 21:23:43,528 [INFO] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2026-04-06 21:23:43,635 [INFO] Broker version identified as 2.6.0
+2026-04-06 21:23:43,635 [INFO] Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+2026-04-06 21:23:43,639 [INFO] Connected | bootstrap=localhost:9092 topic=weather_events cities=6 interval=10s
+2026-04-06 21:23:44,223 [INFO] <BrokerConnection node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2026-04-06 21:23:44,225 [INFO] <BrokerConnection node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2026-04-06 21:23:44,225 [INFO] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2026-04-06 21:23:44,292 [INFO] city=New York   temp=  +8.9°C hum= 47% wind= 22.6 km/h | partition=0 offset=527
+2026-04-06 21:23:44,920 [INFO] city=London     temp= +15.8°C hum= 36% wind= 13.3 km/h | partition=0 offset=528
+2026-04-06 21:23:45,557 [INFO] city=Tokyo      temp= +15.6°C hum= 75% wind=  7.2 km/h | partition=0 offset=529
+2026-04-06 21:23:46,220 [INFO] city=Sydney     temp= +12.8°C hum= 99% wind=  3.3 km/h | partition=0 offset=530
+2026-04-06 21:23:46,956 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.4 km/h | partition=0 offset=531
+2026-04-06 21:23:47,583 [INFO] city=Dubai      temp= +23.7°C hum= 55% wind= 22.7 km/h | partition=0 offset=532
+2026-04-06 21:38:04,333 [INFO] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2026-04-06 21:38:04,334 [INFO] Probing node bootstrap-0 broker version
+2026-04-06 21:38:04,343 [INFO] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2026-04-06 21:38:04,448 [INFO] Broker version identified as 2.6.0
+2026-04-06 21:38:04,450 [INFO] Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+2026-04-06 21:38:04,452 [INFO] Connected | bootstrap=localhost:9092 topic=weather_events cities=6 interval=10s
+2026-04-06 21:38:05,199 [INFO] <BrokerConnection node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2026-04-06 21:38:05,201 [INFO] <BrokerConnection node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2026-04-06 21:38:05,201 [INFO] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2026-04-06 21:38:05,228 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=533
+2026-04-06 21:38:05,918 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=534
+2026-04-06 21:38:06,582 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=535
+2026-04-06 21:38:07,220 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=536
+2026-04-06 21:38:07,882 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=537
+2026-04-06 21:38:08,529 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=538
+2026-04-06 21:38:19,205 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=539
+2026-04-06 21:38:19,882 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=540
+2026-04-06 21:38:20,547 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=541
+2026-04-06 21:38:21,181 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=542
+2026-04-06 21:38:21,837 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=543
+2026-04-06 21:38:22,488 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=544
+2026-04-06 21:38:33,148 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=545
+2026-04-06 21:38:33,872 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=546
+2026-04-06 21:38:34,506 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=547
+2026-04-06 21:38:35,140 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=548
+2026-04-06 21:38:35,774 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=549
+2026-04-06 21:38:36,385 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=550
+2026-04-06 21:38:47,014 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=551
+2026-04-06 21:38:47,665 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=552
+2026-04-06 21:38:48,348 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=553
+2026-04-06 21:38:48,989 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=554
+2026-04-06 21:38:49,654 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=555
+2026-04-06 21:38:50,267 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=556
+2026-04-06 21:39:00,970 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=557
+2026-04-06 21:39:01,599 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=558
+2026-04-06 21:39:02,246 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=559
+2026-04-06 21:39:02,944 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=560
+2026-04-06 21:39:12,948 [ERROR] API error for Paris: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=48.8566&longitude=2.3522&current=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cprecipitation%2Cweather_code&timezone=UTC (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.open-meteo.com', port=443) at 0x1e274949160>, 'Connection to api.open-meteo.com timed out. (connect timeout=10)'))
+2026-04-06 21:39:13,576 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=561
+2026-04-06 21:39:24,200 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=562
+2026-04-06 21:39:24,849 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=563
+2026-04-06 21:39:25,514 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=564
+2026-04-06 21:39:26,166 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=565
+2026-04-06 21:39:26,859 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=566
+2026-04-06 21:39:27,473 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=567
+2026-04-06 21:39:38,117 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=568
+2026-04-06 21:39:38,759 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=569
+2026-04-06 21:39:39,402 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=570
+2026-04-06 21:39:40,059 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=571
+2026-04-06 21:39:40,728 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=572
+2026-04-06 21:39:41,360 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=573
+2026-04-06 21:39:52,068 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=574
+2026-04-06 21:39:52,755 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=575
+2026-04-06 21:39:53,482 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=576
+2026-04-06 21:39:54,114 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=577
+2026-04-06 21:39:54,746 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=578
+2026-04-06 21:39:55,415 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=579
+2026-04-06 21:40:08,100 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=580
+2026-04-06 21:40:11,892 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=581
+2026-04-06 21:40:13,737 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=582
+2026-04-06 21:40:15,185 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=583
+2026-04-06 21:40:16,447 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=584
+2026-04-06 21:40:17,530 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=585
+2026-04-06 21:40:28,166 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=586
+2026-04-06 21:40:28,819 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=587
+2026-04-06 21:40:29,456 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=588
+2026-04-06 21:40:30,122 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=589
+2026-04-06 21:40:30,738 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=590
+2026-04-06 21:40:31,447 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=591
+2026-04-06 21:40:42,207 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=592
+2026-04-06 21:40:42,987 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=593
+2026-04-06 21:40:43,940 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=594
+2026-04-06 21:40:44,653 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=595
+2026-04-06 21:40:45,449 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=596
+2026-04-06 21:40:46,166 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=597
+2026-04-06 21:40:56,832 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=598
+2026-04-06 21:40:57,472 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=599
+2026-04-06 21:40:58,166 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=600
+2026-04-06 21:40:58,816 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=601
+2026-04-06 21:40:59,576 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=602
+2026-04-06 21:41:00,238 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=603
+2026-04-06 21:41:10,905 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=604
+2026-04-06 21:41:11,680 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=605
+2026-04-06 21:41:12,338 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=606
+2026-04-06 21:41:12,955 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=607
+2026-04-06 21:41:13,584 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=608
+2026-04-06 21:41:14,195 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=609
+2026-04-06 21:41:15,200 [INFO] Signal 2 received — shutting down.
+2026-04-06 21:41:15,200 [INFO] Producer stopped.
+2026-04-06 21:41:15,200 [INFO] Closing the Kafka producer with 4294967.0 secs timeout.
+2026-04-06 21:41:15,200 [INFO] <BrokerConnection node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2026-04-06 21:42:08,129 [INFO] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2026-04-06 21:42:08,131 [INFO] Probing node bootstrap-0 broker version
+2026-04-06 21:42:08,136 [INFO] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2026-04-06 21:42:08,243 [INFO] Broker version identified as 2.6.0
+2026-04-06 21:42:08,243 [INFO] Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+2026-04-06 21:42:08,248 [INFO] Connected | bootstrap=localhost:9092 topic=weather_events cities=6 interval=10s
+2026-04-06 21:42:08,921 [INFO] <BrokerConnection node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2026-04-06 21:42:08,922 [INFO] <BrokerConnection node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2026-04-06 21:42:08,923 [INFO] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2026-04-06 21:42:08,978 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=610
+2026-04-06 21:42:09,660 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=611
+2026-04-06 21:42:10,282 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=612
+2026-04-06 21:42:10,959 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=613
+2026-04-06 21:42:11,583 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=614
+2026-04-06 21:42:12,253 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=615
+2026-04-06 21:42:22,950 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=616
+2026-04-06 21:42:23,600 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=617
+2026-04-06 21:42:24,363 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=618
+2026-04-06 21:42:24,997 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=619
+2026-04-06 21:42:25,628 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=620
+2026-04-06 21:42:26,406 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=621
+2026-04-06 21:42:37,047 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=622
+2026-04-06 21:42:37,684 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=623
+2026-04-06 21:42:38,442 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=624
+2026-04-06 21:42:39,095 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=625
+2026-04-06 21:42:39,772 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=626
+2026-04-06 21:42:40,462 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=627
+2026-04-06 21:42:51,104 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=628
+2026-04-06 21:42:51,752 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=629
+2026-04-06 21:42:52,389 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=630
+2026-04-06 21:42:53,062 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=631
+2026-04-06 21:42:53,715 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=632
+2026-04-06 21:42:54,379 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=633
+2026-04-06 21:43:05,064 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=634
+2026-04-06 21:43:05,817 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=635
+2026-04-06 21:43:06,517 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=636
+2026-04-06 21:43:07,215 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=637
+2026-04-06 21:43:07,871 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=638
+2026-04-06 21:43:08,595 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=639
+2026-04-06 21:43:19,224 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=640
+2026-04-06 21:43:19,955 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=641
+2026-04-06 21:43:20,587 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=642
+2026-04-06 21:43:21,201 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=643
+2026-04-06 21:43:21,852 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=644
+2026-04-06 21:43:22,548 [INFO] city=Dubai      temp= +23.8°C hum= 56% wind= 21.0 km/h | partition=0 offset=645
+2026-04-06 21:43:33,259 [INFO] city=New York   temp=  +9.4°C hum= 46% wind= 23.5 km/h | partition=0 offset=646
+2026-04-06 21:43:33,887 [INFO] city=London     temp= +15.7°C hum= 37% wind= 13.7 km/h | partition=0 offset=647
+2026-04-06 21:43:34,524 [INFO] city=Tokyo      temp= +15.6°C hum= 74% wind=  7.5 km/h | partition=0 offset=648
+2026-04-06 21:43:35,171 [INFO] city=Sydney     temp= +12.9°C hum= 98% wind=  3.2 km/h | partition=0 offset=649
+2026-04-06 21:43:35,888 [INFO] city=Paris      temp= +18.2°C hum= 43% wind=  8.8 km/h | partition=0 offset=650
